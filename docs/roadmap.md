@@ -17,13 +17,22 @@
 - Error model
 - Partial completion semantics
 
-## v0.3 Capability Model
+## v0.3 Prompt Translation and Learning Loop
+
+- Local LLM prompt-to-UATP translator
+- Anonymous contribution envelope
+- Task-library taxonomy index
+- Semantic signature and duplicate rejection pipeline
+- Runtime contribution settings
+- Enterprise local-only policy controls
+
+## v0.4 Capability Model
 
 - Agent capability declarations
 - Required vs optional action support
 - Compatibility checks before execution
 
-## v0.4 Transport Embedding
+## v0.5 Transport Embedding
 
 - MCP embedding guide
 - A2A payload embedding guide

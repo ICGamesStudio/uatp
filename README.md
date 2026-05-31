@@ -91,6 +91,8 @@ python -m uatp.cli transpile ../../examples/debug_code.yaml --target claude
 - [Quickstart](docs/quickstart.md)
 - [Task library](docs/task-library.md)
 - [Data sources](docs/data-sources.md)
+- [Learning loop](docs/learning-loop.md)
+- [Prompt translation](docs/prompt-translation.md)
 - [Benchmarks](docs/benchmarks.md)
 - [Specification](spec/uatp-0.1.md)
 - [Roadmap](docs/roadmap.md)

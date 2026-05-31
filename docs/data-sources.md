@@ -15,6 +15,7 @@ Use:
 - Official product documentation about prompt/task design.
 - Public forum posts where reuse is permitted by the platform terms.
 - Voluntary user submissions collected through explicit consent forms.
+- Anonymous non-personal task-pattern contributions from compatible runtimes.
 - Synthetic variations derived from documented task patterns.
 
 Do not use:
@@ -64,6 +65,12 @@ The task library should grow in layers:
 - 1,000 generated baseline tasks.
 - 2,500 public benchmark-inspired tasks.
 - 5,000 public issue/forum-inspired task patterns.
-- 10,000 consent-based real user request patterns.
+- 10,000 anonymous runtime-contributed task patterns.
+- 100,000+ indexed task patterns once contribution envelopes and duplicate controls are stable.
 
 Growth should be quality-gated. A larger task library is only valuable if it remains deduplicated, valid, traceable, and useful for benchmark design.
+
+See also:
+
+- [Learning loop](learning-loop.md)
+- [Prompt translation](prompt-translation.md)

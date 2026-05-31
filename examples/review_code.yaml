@@ -1,0 +1,22 @@
+protocol: uatp
+version: "0.1"
+intent: review_code
+scope:
+  target: repository
+  path: "."
+actions:
+  - inspect
+  - report
+success_criteria:
+  - Findings are ordered by severity.
+  - Each finding includes concrete location or evidence.
+  - Test gaps and residual risks are listed.
+constraints:
+  risk: low
+  change: none
+output:
+  format: review_findings
+  sections:
+    - findings
+    - questions
+    - test_gaps

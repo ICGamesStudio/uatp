@@ -1,0 +1,12 @@
+protocol: uatp
+version: "0.1"
+intent: example.com/generate_asset
+scope:
+  target: document
+actions:
+  - inspect
+  - example.com/render_preview
+success_criteria:
+  - Preview output is generated or failure is documented.
+output:
+  format: example.com/asset_report

@@ -1,0 +1,18 @@
+protocol: uatp
+version: "0.1"
+intent: summarize
+scope:
+  target: document
+actions:
+  - inspect
+  - summarize
+success_criteria:
+  - Summary preserves the main claims.
+  - Summary omits unsupported speculation.
+  - Output stays within the requested budget.
+constraints:
+  language: tr
+  max_tokens: 500
+output:
+  format: markdown
+  language: tr

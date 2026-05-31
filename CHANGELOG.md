@@ -1,0 +1,11 @@
+# Changelog
+
+## 0.1.0-dev
+
+- Added UATP 0.1 draft specification.
+- Added JSON Schema 2020-12 validation schema.
+- Added valid and invalid conformance fixtures.
+- Added JavaScript parser, validator, CLI, and conformance test skeleton.
+- Added Python parser, validator, CLI, and conformance test skeleton.
+- Added OpenAI and Claude transpiler notes.
+- Added MVP plan, 7-day sprint, roadmap, contribution guide, and security notes.

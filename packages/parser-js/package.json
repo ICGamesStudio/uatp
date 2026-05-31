@@ -1,0 +1,19 @@
+{
+  "name": "@uatp/parser-js",
+  "version": "0.1.0",
+  "description": "Parser, validator, CLI, and prompt transpilers for UATP 0.1.",
+  "type": "module",
+  "bin": {
+    "uatp": "./src/cli.js"
+  },
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/cli.js && node --check test/conformance.test.js",
+    "test": "node test/conformance.test.js",
+    "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {}
+}

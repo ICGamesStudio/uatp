@@ -1,0 +1,21 @@
+protocol: uatp
+version: "0.1"
+intent: debug_code
+scope:
+  target: repository
+  path: "."
+actions:
+  - inspect
+  - run_tests
+  - patch
+  - summarize
+success_criteria:
+  - Failing behavior is reproduced or documented.
+  - Minimal code change is applied.
+  - Relevant validation result is reported.
+constraints:
+  risk: low
+  change: minimal
+output:
+  format: diff_summary
+  language: en

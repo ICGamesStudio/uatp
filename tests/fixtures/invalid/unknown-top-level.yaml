@@ -1,0 +1,12 @@
+protocol: uatp
+version: "0.1"
+intent: summarize
+scope:
+  target: document
+actions:
+  - summarize
+success_criteria:
+  - Summary is accurate.
+output:
+  format: markdown
+random_field: true

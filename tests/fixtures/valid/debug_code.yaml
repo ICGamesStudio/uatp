@@ -1,0 +1,15 @@
+protocol: uatp
+version: "0.1"
+intent: debug_code
+scope:
+  target: repository
+  path: "."
+actions:
+  - inspect
+  - run_tests
+  - patch
+success_criteria:
+  - Failure is reproduced or documented.
+  - Minimal fix is applied.
+output:
+  format: diff_summary

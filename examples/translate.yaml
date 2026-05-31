@@ -1,0 +1,16 @@
+protocol: uatp
+version: "0.1"
+intent: translate
+scope:
+  target: text
+actions:
+  - translate
+success_criteria:
+  - Meaning is preserved.
+  - Target language is natural and concise.
+  - Formatting is preserved where practical.
+constraints:
+  language: en
+output:
+  format: plain_text
+  language: en

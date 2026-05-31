@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "research/source-4"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Research task scope."
+  - "The output directly addresses: refactor literature notes."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Research"
+  audience: "research teams"
+  request_pattern: "refactor literature notes"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor literature notes for this research workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "research-024"
+  title: "Research: refactor literature notes"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

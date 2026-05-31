@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "document"
+  path: "data-analytics/source-2"
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Data Analytics task scope."
+  - "The output directly addresses: extract KPIs."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Data Analytics"
+  audience: "analytics teams"
+  request_pattern: "extract KPIs"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract KPIs for this data analytics workflow."
+output:
+  format: "json"
+  language: "en"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "data-analytics-002"
+  title: "Data Analytics: extract KPIs"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

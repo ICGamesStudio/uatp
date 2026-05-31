@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "product-management/source-10"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Product Management task scope."
+  - "The output directly addresses: refactor user stories."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Product Management"
+  audience: "product teams"
+  request_pattern: "refactor user stories"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor user stories for this product management workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "product-management-040"
+  title: "Product Management: refactor user stories"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

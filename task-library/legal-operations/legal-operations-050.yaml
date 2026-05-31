@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "document"
+  path: "legal-operations/source-10"
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Legal Operations task scope."
+  - "The output directly addresses: extract obligations."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Legal Operations"
+  audience: "legal teams"
+  request_pattern: "extract obligations"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract obligations for this legal operations workflow."
+output:
+  format: "json"
+  language: "tr"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "legal-operations-050"
+  title: "Legal Operations: extract obligations"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

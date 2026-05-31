@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "debug_code"
+scope:
+  target: "document"
+  path: "ai-operations/source-10"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "summarize"
+success_criteria:
+  - "The failure mode is reproduced or explicitly documented."
+  - "The smallest practical fix is proposed or applied."
+  - "The response stays within the AI Operations task scope."
+  - "The output directly addresses: debug an evaluation failure."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "AI Operations"
+  audience: "AI platform teams"
+  request_pattern: "debug an evaluation failure"
+  expected_business_value: "Reduce time to diagnose and fix operational failures."
+  example_user_request: "Please debug an evaluation failure for this ai operations workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "ai-operations-050"
+  title: "AI Operations: debug an evaluation failure"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

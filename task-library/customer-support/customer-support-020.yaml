@@ -1,0 +1,37 @@
+protocol: "uatp"
+version: "0.1"
+intent: "translate"
+scope:
+  target: "conversation"
+  path: "customer-support/source-10"
+actions:
+  - "translate"
+success_criteria:
+  - "Meaning is preserved."
+  - "The target language reads naturally."
+  - "The response stays within the Customer Support task scope."
+  - "The output directly addresses: translate customer feedback."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Customer Support"
+  audience: "support teams"
+  request_pattern: "translate customer feedback"
+  expected_business_value: "Make information usable across languages."
+  example_user_request: "Please translate customer feedback for this customer support workflow."
+output:
+  format: "plain_text"
+  language: "tr"
+  sections:
+    - "translation"
+  include_sources: false
+metadata:
+  id: "customer-support-020"
+  title: "Customer Support: translate customer feedback"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

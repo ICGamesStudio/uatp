@@ -1,0 +1,37 @@
+protocol: "uatp"
+version: "0.1"
+intent: "translate"
+scope:
+  target: "document"
+  path: "content-production/source-4"
+actions:
+  - "translate"
+success_criteria:
+  - "Meaning is preserved."
+  - "The target language reads naturally."
+  - "The response stays within the Content Production task scope."
+  - "The output directly addresses: translate draft content."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Content Production"
+  audience: "content teams"
+  request_pattern: "translate draft content"
+  expected_business_value: "Make information usable across languages."
+  example_user_request: "Please translate draft content for this content production workflow."
+output:
+  format: "plain_text"
+  language: "tr"
+  sections:
+    - "translation"
+  include_sources: false
+metadata:
+  id: "content-production-004"
+  title: "Content Production: translate draft content"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

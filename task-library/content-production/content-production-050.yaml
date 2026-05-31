@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "document"
+  path: "content-production/source-10"
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Content Production task scope."
+  - "The output directly addresses: extract content pillars."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Content Production"
+  audience: "content teams"
+  request_pattern: "extract content pillars"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract content pillars for this content production workflow."
+output:
+  format: "json"
+  language: "tr"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "content-production-050"
+  title: "Content Production: extract content pillars"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

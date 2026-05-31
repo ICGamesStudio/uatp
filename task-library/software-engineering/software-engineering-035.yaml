@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "write_tests"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "validate"
+success_criteria:
+  - "Tests cover the requested behavior."
+  - "Validation steps are listed with expected outcomes."
+  - "The response stays within the Software Engineering task scope."
+  - "The output directly addresses: write missing regression tests."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Software Engineering"
+  audience: "engineering teams"
+  request_pattern: "write missing regression tests"
+  expected_business_value: "Increase confidence with repeatable validation."
+  example_user_request: "Please write missing regression tests for this software engineering workflow."
+output:
+  format: "test_report"
+  language: "tr"
+  sections:
+    - "coverage"
+    - "test_cases"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "software-engineering-035"
+  title: "Software Engineering: write missing regression tests"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

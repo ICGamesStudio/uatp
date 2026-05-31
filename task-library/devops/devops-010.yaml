@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "debug_code"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "summarize"
+success_criteria:
+  - "The failure mode is reproduced or explicitly documented."
+  - "The smallest practical fix is proposed or applied."
+  - "The response stays within the DevOps task scope."
+  - "The output directly addresses: debug a deployment failure."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "DevOps"
+  audience: "platform teams"
+  request_pattern: "debug a deployment failure"
+  expected_business_value: "Reduce time to diagnose and fix operational failures."
+  example_user_request: "Please debug a deployment failure for this devops workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "devops-010"
+  title: "DevOps: debug a deployment failure"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

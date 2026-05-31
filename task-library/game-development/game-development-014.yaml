@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Game Development task scope."
+  - "The output directly addresses: extract tuning parameters."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Game Development"
+  audience: "game teams"
+  request_pattern: "extract tuning parameters"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract tuning parameters for this game development workflow."
+output:
+  format: "json"
+  language: "tr"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "game-development-014"
+  title: "Game Development: extract tuning parameters"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

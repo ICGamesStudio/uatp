@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "debug_code"
+scope:
+  target: "document"
+  path: "knowledge-management/source-9"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "summarize"
+success_criteria:
+  - "The failure mode is reproduced or explicitly documented."
+  - "The smallest practical fix is proposed or applied."
+  - "The response stays within the Knowledge Management task scope."
+  - "The output directly addresses: debug missing references."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Knowledge Management"
+  audience: "operations teams"
+  request_pattern: "debug missing references"
+  expected_business_value: "Reduce time to diagnose and fix operational failures."
+  example_user_request: "Please debug missing references for this knowledge management workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "knowledge-management-039"
+  title: "Knowledge Management: debug missing references"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

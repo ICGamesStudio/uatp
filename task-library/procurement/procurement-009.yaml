@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "summarize"
+scope:
+  target: "document"
+  path: "procurement/source-9"
+actions:
+  - "inspect"
+  - "summarize"
+success_criteria:
+  - "The main claims are preserved."
+  - "Unsupported speculation is omitted."
+  - "The response stays within the Procurement task scope."
+  - "The output directly addresses: summarize vendor requirements."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Procurement"
+  audience: "procurement teams"
+  request_pattern: "summarize vendor requirements"
+  expected_business_value: "Reduce review time and preserve key information."
+  example_user_request: "Please summarize vendor requirements for this procurement workflow."
+output:
+  format: "markdown"
+  language: "tr"
+  sections:
+    - "summary"
+    - "key_points"
+    - "open_questions"
+  include_sources: true
+metadata:
+  id: "procurement-009"
+  title: "Procurement: summarize vendor requirements"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

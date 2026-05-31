@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "write_tests"
+scope:
+  target: "document"
+  path: "knowledge-management/source-10"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "validate"
+success_criteria:
+  - "Tests cover the requested behavior."
+  - "Validation steps are listed with expected outcomes."
+  - "The response stays within the Knowledge Management task scope."
+  - "The output directly addresses: write freshness checks."
+constraints:
+  risk: "medium"
+  change: "minimal"
+  language: "tr"
+  style: "action-oriented"
+  max_tokens: 900
+context:
+  domain: "Knowledge Management"
+  audience: "operations teams"
+  request_pattern: "write freshness checks"
+  expected_business_value: "Increase confidence with repeatable validation."
+  example_user_request: "Please write freshness checks for this knowledge management workflow."
+output:
+  format: "test_report"
+  language: "tr"
+  sections:
+    - "coverage"
+    - "test_cases"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "knowledge-management-030"
+  title: "Knowledge Management: write freshness checks"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

@@ -61,6 +61,7 @@ UATP is not a replacement for MCP, A2A, provider APIs, workflow engines, or prom
 - Valid and invalid conformance fixtures.
 - Example task library.
 - Benchmark methodology.
+- Generated library of 1,000 valid UATP task definitions.
 
 ## Quickstart
 
@@ -88,6 +89,7 @@ python -m uatp.cli transpile ../../examples/debug_code.yaml --target claude
 
 - [Value proposition](docs/value-proposition.md)
 - [Quickstart](docs/quickstart.md)
+- [Task library](docs/task-library.md)
 - [Benchmarks](docs/benchmarks.md)
 - [Specification](spec/uatp-0.1.md)
 - [Roadmap](docs/roadmap.md)

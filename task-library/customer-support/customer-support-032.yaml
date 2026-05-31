@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "conversation"
+  path: "customer-support/source-2"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Customer Support task scope."
+  - "The output directly addresses: refactor a help-center article."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Customer Support"
+  audience: "support teams"
+  request_pattern: "refactor a help-center article"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor a help-center article for this customer support workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "customer-support-032"
+  title: "Customer Support: refactor a help-center article"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

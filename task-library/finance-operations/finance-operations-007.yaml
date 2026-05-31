@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "debug_code"
+scope:
+  target: "document"
+  path: "finance-operations/source-7"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "summarize"
+success_criteria:
+  - "The failure mode is reproduced or explicitly documented."
+  - "The smallest practical fix is proposed or applied."
+  - "The response stays within the Finance Operations task scope."
+  - "The output directly addresses: debug calculation mismatch."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Finance Operations"
+  audience: "finance teams"
+  request_pattern: "debug calculation mismatch"
+  expected_business_value: "Reduce time to diagnose and fix operational failures."
+  example_user_request: "Please debug calculation mismatch for this finance operations workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "finance-operations-007"
+  title: "Finance Operations: debug calculation mismatch"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

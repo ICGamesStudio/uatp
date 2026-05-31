@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "review_code"
+scope:
+  target: "conversation"
+  path: "customer-support/source-3"
+actions:
+  - "inspect"
+  - "report"
+success_criteria:
+  - "Findings are ordered by severity."
+  - "Each finding includes evidence or a concrete location."
+  - "The response stays within the Customer Support task scope."
+  - "The output directly addresses: review escalation notes."
+constraints:
+  risk: "medium"
+  change: "moderate"
+  language: "en"
+  style: "structured"
+  max_tokens: 900
+context:
+  domain: "Customer Support"
+  audience: "support teams"
+  request_pattern: "review escalation notes"
+  expected_business_value: "Improve review consistency and reduce missed issues."
+  example_user_request: "Please review escalation notes for this customer support workflow."
+output:
+  format: "review_findings"
+  language: "en"
+  sections:
+    - "findings"
+    - "questions"
+    - "test_gaps"
+  include_sources: true
+metadata:
+  id: "customer-support-013"
+  title: "Customer Support: review escalation notes"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

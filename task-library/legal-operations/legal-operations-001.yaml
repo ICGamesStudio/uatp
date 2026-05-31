@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "summarize"
+scope:
+  target: "document"
+  path: "legal-operations/source-1"
+actions:
+  - "inspect"
+  - "summarize"
+success_criteria:
+  - "The main claims are preserved."
+  - "Unsupported speculation is omitted."
+  - "The response stays within the Legal Operations task scope."
+  - "The output directly addresses: summarize contract terms."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Legal Operations"
+  audience: "legal teams"
+  request_pattern: "summarize contract terms"
+  expected_business_value: "Reduce review time and preserve key information."
+  example_user_request: "Please summarize contract terms for this legal operations workflow."
+output:
+  format: "markdown"
+  language: "en"
+  sections:
+    - "summary"
+    - "key_points"
+    - "open_questions"
+  include_sources: true
+metadata:
+  id: "legal-operations-001"
+  title: "Legal Operations: summarize contract terms"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

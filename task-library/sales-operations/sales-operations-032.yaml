@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "sales-operations/source-2"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Sales Operations task scope."
+  - "The output directly addresses: refactor sales playbook content."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Sales Operations"
+  audience: "sales teams"
+  request_pattern: "refactor sales playbook content"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor sales playbook content for this sales operations workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "sales-operations-032"
+  title: "Sales Operations: refactor sales playbook content"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

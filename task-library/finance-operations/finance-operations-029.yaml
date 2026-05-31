@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "review_code"
+scope:
+  target: "document"
+  path: "finance-operations/source-9"
+actions:
+  - "inspect"
+  - "report"
+success_criteria:
+  - "Findings are ordered by severity."
+  - "Each finding includes evidence or a concrete location."
+  - "The response stays within the Finance Operations task scope."
+  - "The output directly addresses: review invoice fields."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Finance Operations"
+  audience: "finance teams"
+  request_pattern: "review invoice fields"
+  expected_business_value: "Improve review consistency and reduce missed issues."
+  example_user_request: "Please review invoice fields for this finance operations workflow."
+output:
+  format: "review_findings"
+  language: "tr"
+  sections:
+    - "findings"
+    - "questions"
+    - "test_gaps"
+  include_sources: true
+metadata:
+  id: "finance-operations-029"
+  title: "Finance Operations: review invoice fields"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

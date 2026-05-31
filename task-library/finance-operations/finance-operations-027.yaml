@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "create_plan"
+scope:
+  target: "document"
+  path: "finance-operations/source-7"
+actions:
+  - "inspect"
+  - "plan"
+  - "report"
+success_criteria:
+  - "The plan is ordered by execution priority."
+  - "Risks and validation steps are included."
+  - "The response stays within the Finance Operations task scope."
+  - "The output directly addresses: create a reconciliation plan."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Finance Operations"
+  audience: "finance teams"
+  request_pattern: "create a reconciliation plan"
+  expected_business_value: "Convert ambiguous requests into executable steps."
+  example_user_request: "Please create a reconciliation plan for this finance operations workflow."
+output:
+  format: "plan"
+  language: "en"
+  sections:
+    - "steps"
+    - "dependencies"
+    - "risks"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "finance-operations-027"
+  title: "Finance Operations: create a reconciliation plan"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

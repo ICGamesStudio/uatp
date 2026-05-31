@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "summarize"
+scope:
+  target: "document"
+  path: "healthcare-admin/source-7"
+actions:
+  - "inspect"
+  - "summarize"
+success_criteria:
+  - "The main claims are preserved."
+  - "Unsupported speculation is omitted."
+  - "The response stays within the Healthcare Administration task scope."
+  - "The output directly addresses: summarize administrative notes."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Healthcare Administration"
+  audience: "healthcare operations teams"
+  request_pattern: "summarize administrative notes"
+  expected_business_value: "Reduce review time and preserve key information."
+  example_user_request: "Please summarize administrative notes for this healthcare administration workflow."
+output:
+  format: "markdown"
+  language: "en"
+  sections:
+    - "summary"
+    - "key_points"
+    - "open_questions"
+  include_sources: true
+metadata:
+  id: "healthcare-admin-017"
+  title: "Healthcare Administration: summarize administrative notes"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

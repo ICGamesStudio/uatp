@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "summarize"
+scope:
+  target: "document"
+  path: "knowledge-management/source-1"
+actions:
+  - "inspect"
+  - "summarize"
+success_criteria:
+  - "The main claims are preserved."
+  - "Unsupported speculation is omitted."
+  - "The response stays within the Knowledge Management task scope."
+  - "The output directly addresses: summarize knowledge base content."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Knowledge Management"
+  audience: "operations teams"
+  request_pattern: "summarize knowledge base content"
+  expected_business_value: "Reduce review time and preserve key information."
+  example_user_request: "Please summarize knowledge base content for this knowledge management workflow."
+output:
+  format: "markdown"
+  language: "en"
+  sections:
+    - "summary"
+    - "key_points"
+    - "open_questions"
+  include_sources: true
+metadata:
+  id: "knowledge-management-001"
+  title: "Knowledge Management: summarize knowledge base content"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

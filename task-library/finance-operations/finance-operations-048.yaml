@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "finance-operations/source-8"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Finance Operations task scope."
+  - "The output directly addresses: refactor report structure."
+constraints:
+  risk: "medium"
+  change: "moderate"
+  language: "en"
+  style: "structured"
+  max_tokens: 900
+context:
+  domain: "Finance Operations"
+  audience: "finance teams"
+  request_pattern: "refactor report structure"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor report structure for this finance operations workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "finance-operations-048"
+  title: "Finance Operations: refactor report structure"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

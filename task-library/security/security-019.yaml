@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "document"
+  path: "security/source-9"
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Security task scope."
+  - "The output directly addresses: extract indicators of compromise."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Security"
+  audience: "security teams"
+  request_pattern: "extract indicators of compromise"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract indicators of compromise for this security workflow."
+output:
+  format: "json"
+  language: "tr"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "security-019"
+  title: "Security: extract indicators of compromise"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

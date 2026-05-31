@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "review_code"
+scope:
+  target: "document"
+  path: "sales-operations/source-7"
+actions:
+  - "inspect"
+  - "report"
+success_criteria:
+  - "Findings are ordered by severity."
+  - "Each finding includes evidence or a concrete location."
+  - "The response stays within the Sales Operations task scope."
+  - "The output directly addresses: review proposal requirements."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Sales Operations"
+  audience: "sales teams"
+  request_pattern: "review proposal requirements"
+  expected_business_value: "Improve review consistency and reduce missed issues."
+  example_user_request: "Please review proposal requirements for this sales operations workflow."
+output:
+  format: "review_findings"
+  language: "en"
+  sections:
+    - "findings"
+    - "questions"
+    - "test_gaps"
+  include_sources: true
+metadata:
+  id: "sales-operations-037"
+  title: "Sales Operations: review proposal requirements"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

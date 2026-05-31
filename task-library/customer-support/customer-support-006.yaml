@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "write_tests"
+scope:
+  target: "conversation"
+  path: "customer-support/source-6"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "validate"
+success_criteria:
+  - "Tests cover the requested behavior."
+  - "Validation steps are listed with expected outcomes."
+  - "The response stays within the Customer Support task scope."
+  - "The output directly addresses: write test cases for reproduction."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Customer Support"
+  audience: "support teams"
+  request_pattern: "write test cases for reproduction"
+  expected_business_value: "Increase confidence with repeatable validation."
+  example_user_request: "Please write test cases for reproduction for this customer support workflow."
+output:
+  format: "test_report"
+  language: "en"
+  sections:
+    - "coverage"
+    - "test_cases"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "customer-support-006"
+  title: "Customer Support: write test cases for reproduction"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "legal-operations/source-8"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Legal Operations task scope."
+  - "The output directly addresses: refactor policy language."
+constraints:
+  risk: "medium"
+  change: "moderate"
+  language: "en"
+  style: "structured"
+  max_tokens: 900
+context:
+  domain: "Legal Operations"
+  audience: "legal teams"
+  request_pattern: "refactor policy language"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor policy language for this legal operations workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "legal-operations-048"
+  title: "Legal Operations: refactor policy language"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

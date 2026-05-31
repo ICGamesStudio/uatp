@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "debug_code"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "summarize"
+success_criteria:
+  - "The failure mode is reproduced or explicitly documented."
+  - "The smallest practical fix is proposed or applied."
+  - "The response stays within the Game Development task scope."
+  - "The output directly addresses: debug gameplay behavior."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Game Development"
+  audience: "game teams"
+  request_pattern: "debug gameplay behavior"
+  expected_business_value: "Reduce time to diagnose and fix operational failures."
+  example_user_request: "Please debug gameplay behavior for this game development workflow."
+output:
+  format: "diff_summary"
+  language: "tr"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "game-development-009"
+  title: "Game Development: debug gameplay behavior"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Software Engineering task scope."
+  - "The output directly addresses: refactor a module without behavior changes."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Software Engineering"
+  audience: "engineering teams"
+  request_pattern: "refactor a module without behavior changes"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor a module without behavior changes for this software engineering workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "software-engineering-012"
+  title: "Software Engineering: refactor a module without behavior changes"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

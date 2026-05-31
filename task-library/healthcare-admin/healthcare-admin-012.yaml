@@ -1,0 +1,37 @@
+protocol: "uatp"
+version: "0.1"
+intent: "translate"
+scope:
+  target: "document"
+  path: "healthcare-admin/source-2"
+actions:
+  - "translate"
+success_criteria:
+  - "Meaning is preserved."
+  - "The target language reads naturally."
+  - "The response stays within the Healthcare Administration task scope."
+  - "The output directly addresses: translate patient-facing text."
+constraints:
+  risk: "low"
+  change: "minimal"
+  language: "en"
+  style: "evidence-first"
+  max_tokens: 900
+context:
+  domain: "Healthcare Administration"
+  audience: "healthcare operations teams"
+  request_pattern: "translate patient-facing text"
+  expected_business_value: "Make information usable across languages."
+  example_user_request: "Please translate patient-facing text for this healthcare administration workflow."
+output:
+  format: "plain_text"
+  language: "en"
+  sections:
+    - "translation"
+  include_sources: false
+metadata:
+  id: "healthcare-admin-012"
+  title: "Healthcare Administration: translate patient-facing text"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

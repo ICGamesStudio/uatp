@@ -1,0 +1,43 @@
+protocol: "uatp"
+version: "0.1"
+intent: "refactor_code"
+scope:
+  target: "document"
+  path: "education/source-6"
+actions:
+  - "inspect"
+  - "patch"
+  - "validate"
+  - "summarize"
+success_criteria:
+  - "External behavior is preserved."
+  - "The refactor reduces complexity or duplication."
+  - "The response stays within the Education task scope."
+  - "The output directly addresses: refactor curriculum outline."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Education"
+  audience: "learning teams"
+  request_pattern: "refactor curriculum outline"
+  expected_business_value: "Improve maintainability while controlling change risk."
+  example_user_request: "Please refactor curriculum outline for this education workflow."
+output:
+  format: "diff_summary"
+  language: "en"
+  sections:
+    - "summary"
+    - "changes"
+    - "validation"
+    - "risks"
+  include_sources: false
+metadata:
+  id: "education-016"
+  title: "Education: refactor curriculum outline"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

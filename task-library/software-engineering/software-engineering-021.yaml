@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "summarize"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "summarize"
+success_criteria:
+  - "The main claims are preserved."
+  - "Unsupported speculation is omitted."
+  - "The response stays within the Software Engineering task scope."
+  - "The output directly addresses: summarize a technical change."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Software Engineering"
+  audience: "engineering teams"
+  request_pattern: "summarize a technical change"
+  expected_business_value: "Reduce review time and preserve key information."
+  example_user_request: "Please summarize a technical change for this software engineering workflow."
+output:
+  format: "markdown"
+  language: "en"
+  sections:
+    - "summary"
+    - "key_points"
+    - "open_questions"
+  include_sources: true
+metadata:
+  id: "software-engineering-021"
+  title: "Software Engineering: summarize a technical change"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

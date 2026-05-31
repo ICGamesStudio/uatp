@@ -1,0 +1,40 @@
+protocol: "uatp"
+version: "0.1"
+intent: "review_code"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "report"
+success_criteria:
+  - "Findings are ordered by severity."
+  - "Each finding includes evidence or a concrete location."
+  - "The response stays within the DevOps task scope."
+  - "The output directly addresses: review a CI workflow."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "DevOps"
+  audience: "platform teams"
+  request_pattern: "review a CI workflow"
+  expected_business_value: "Improve review consistency and reduce missed issues."
+  example_user_request: "Please review a CI workflow for this devops workflow."
+output:
+  format: "review_findings"
+  language: "en"
+  sections:
+    - "findings"
+    - "questions"
+    - "test_gaps"
+  include_sources: true
+metadata:
+  id: "devops-041"
+  title: "DevOps: review a CI workflow"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

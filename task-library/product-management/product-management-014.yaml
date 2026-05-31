@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "write_tests"
+scope:
+  target: "document"
+  path: "product-management/source-4"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "validate"
+success_criteria:
+  - "Tests cover the requested behavior."
+  - "Validation steps are listed with expected outcomes."
+  - "The response stays within the Product Management task scope."
+  - "The output directly addresses: write acceptance tests."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Product Management"
+  audience: "product teams"
+  request_pattern: "write acceptance tests"
+  expected_business_value: "Increase confidence with repeatable validation."
+  example_user_request: "Please write acceptance tests for this product management workflow."
+output:
+  format: "test_report"
+  language: "tr"
+  sections:
+    - "coverage"
+    - "test_cases"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "product-management-014"
+  title: "Product Management: write acceptance tests"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

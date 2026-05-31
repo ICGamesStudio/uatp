@@ -1,0 +1,41 @@
+protocol: "uatp"
+version: "0.1"
+intent: "extract_information"
+scope:
+  target: "repository"
+  path: "."
+actions:
+  - "inspect"
+  - "extract"
+  - "report"
+success_criteria:
+  - "Extracted fields are structured."
+  - "Missing information is represented explicitly."
+  - "The response stays within the Software Engineering task scope."
+  - "The output directly addresses: extract API contract details."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Software Engineering"
+  audience: "engineering teams"
+  request_pattern: "extract API contract details"
+  expected_business_value: "Turn unstructured input into reusable data."
+  example_user_request: "Please extract API contract details for this software engineering workflow."
+output:
+  format: "json"
+  language: "en"
+  sections:
+    - "fields"
+    - "missing_information"
+    - "sources"
+  include_sources: true
+metadata:
+  id: "software-engineering-006"
+  title: "Software Engineering: extract API contract details"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

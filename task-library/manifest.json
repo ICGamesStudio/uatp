@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-05-31T17:54:57.215Z",
+  "owner": "Smartlabs Medya Teknolojileri AŞ",
+  "website": "https://www.smartlabs.com.tr",
+  "protocol": "uatp",
+  "version": "0.1",
+  "task_count": 1000,
+  "domains": [
+    {
+      "id": "software-engineering",
+      "title": "Software Engineering",
+      "task_count": 50
+    },
+    {
+      "id": "devops",
+      "title": "DevOps",
+      "task_count": 50
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "task_count": 50
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data Analytics",
+      "task_count": 50
+    },
+    {
+      "id": "customer-support",
+      "title": "Customer Support",
+      "task_count": 50
+    },
+    {
+      "id": "product-management",
+      "title": "Product Management",
+      "task_count": 50
+    },
+    {
+      "id": "marketing-operations",
+      "title": "Marketing Operations",
+      "task_count": 50
+    },
+    {
+      "id": "sales-operations",
+      "title": "Sales Operations",
+      "task_count": 50
+    },
+    {
+      "id": "legal-operations",
+      "title": "Legal Operations",
+      "task_count": 50
+    },
+    {
+      "id": "finance-operations",
+      "title": "Finance Operations",
+      "task_count": 50
+    },
+    {
+      "id": "human-resources",
+      "title": "Human Resources",
+      "task_count": 50
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "task_count": 50
+    },
+    {
+      "id": "healthcare-admin",
+      "title": "Healthcare Administration",
+      "task_count": 50
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "task_count": 50
+    },
+    {
+      "id": "content-production",
+      "title": "Content Production",
+      "task_count": 50
+    },
+    {
+      "id": "game-development",
+      "title": "Game Development",
+      "task_count": 50
+    },
+    {
+      "id": "ai-operations",
+      "title": "AI Operations",
+      "task_count": 50
+    },
+    {
+      "id": "knowledge-management",
+      "title": "Knowledge Management",
+      "task_count": 50
+    },
+    {
+      "id": "procurement",
+      "title": "Procurement",
+      "task_count": 50
+    },
+    {
+      "id": "executive-operations",
+      "title": "Executive Operations",
+      "task_count": 50
+    }
+  ]
+}

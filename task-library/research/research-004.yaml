@@ -1,0 +1,37 @@
+protocol: "uatp"
+version: "0.1"
+intent: "translate"
+scope:
+  target: "document"
+  path: "research/source-4"
+actions:
+  - "translate"
+success_criteria:
+  - "Meaning is preserved."
+  - "The target language reads naturally."
+  - "The response stays within the Research task scope."
+  - "The output directly addresses: translate abstract notes."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "tr"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Research"
+  audience: "research teams"
+  request_pattern: "translate abstract notes"
+  expected_business_value: "Make information usable across languages."
+  example_user_request: "Please translate abstract notes for this research workflow."
+output:
+  format: "plain_text"
+  language: "tr"
+  sections:
+    - "translation"
+  include_sources: false
+metadata:
+  id: "research-004"
+  title: "Research: translate abstract notes"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

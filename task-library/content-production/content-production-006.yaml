@@ -1,0 +1,42 @@
+protocol: "uatp"
+version: "0.1"
+intent: "write_tests"
+scope:
+  target: "document"
+  path: "content-production/source-6"
+actions:
+  - "inspect"
+  - "run_tests"
+  - "patch"
+  - "validate"
+success_criteria:
+  - "Tests cover the requested behavior."
+  - "Validation steps are listed with expected outcomes."
+  - "The response stays within the Content Production task scope."
+  - "The output directly addresses: write editorial checks."
+constraints:
+  risk: "low"
+  change: "none"
+  language: "en"
+  style: "concise"
+  max_tokens: 900
+context:
+  domain: "Content Production"
+  audience: "content teams"
+  request_pattern: "write editorial checks"
+  expected_business_value: "Increase confidence with repeatable validation."
+  example_user_request: "Please write editorial checks for this content production workflow."
+output:
+  format: "test_report"
+  language: "en"
+  sections:
+    - "coverage"
+    - "test_cases"
+    - "validation"
+  include_sources: false
+metadata:
+  id: "content-production-006"
+  title: "Content Production: write editorial checks"
+  source: "generated-task-library"
+  owner: "Smartlabs Medya Teknolojileri AŞ"
+  website: "https://www.smartlabs.com.tr"

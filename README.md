@@ -1,5 +1,9 @@
 # Universal Agent Task Protocol (UATP)
 
+Owned and maintained by Smartlabs Medya Teknolojileri AŞ.
+
+Website: https://www.smartlabs.com.tr
+
 UATP is a compact, model-agnostic task format for describing AI agent work in a way that can be validated, logged, shared, and translated across different AI systems.
 
 Instead of sending the same vague prompt again and again, teams can define a task once as structured data:
@@ -91,3 +95,5 @@ python -m uatp.cli transpile ../../examples/debug_code.yaml --target claude
 ## License
 
 MIT.
+
+Copyright (c) 2026 Smartlabs Medya Teknolojileri AŞ.

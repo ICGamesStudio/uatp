@@ -2,6 +2,14 @@
   "name": "@uatp/parser-js",
   "version": "0.1.0",
   "description": "Parser, validator, CLI, and prompt transpilers for UATP 0.1.",
+  "author": "Smartlabs Medya Teknolojileri AŞ",
+  "homepage": "https://www.smartlabs.com.tr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICGamesStudio/uatp.git",
+    "directory": "packages/parser-js"
+  },
+  "license": "MIT",
   "type": "module",
   "bin": {
     "uatp": "./src/cli.js"
@@ -9,7 +17,8 @@
   "scripts": {
     "check": "node --check src/index.js && node --check src/cli.js && node --check test/conformance.test.js",
     "test": "node test/conformance.test.js",
-    "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml"
+    "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml",
+    "benchmark": "node ../../benchmarks/run-benchmarks.js --write"
   },
   "dependencies": {
     "ajv": "^8.17.1",

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added Smartlabs Medya Teknolojileri AŞ ownership metadata.
+- Added executable benchmark harness and baseline benchmark report.
+
 ## 0.1.0-dev
 
 - Added UATP 0.1 draft specification.

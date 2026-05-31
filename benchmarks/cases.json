@@ -1,0 +1,26 @@
+[
+  {
+    "id": "debug-code",
+    "title": "Debug failing repository tests",
+    "naturalPrompt": "Analyze the repository, find the bug, fix it, run tests, and summarize what changed.",
+    "uatpTask": "examples/debug_code.yaml"
+  },
+  {
+    "id": "review-code",
+    "title": "Review code changes",
+    "naturalPrompt": "Review my code and tell me what should be improved.",
+    "uatpTask": "examples/review_code.yaml"
+  },
+  {
+    "id": "summarize-document",
+    "title": "Summarize a document",
+    "naturalPrompt": "Summarize this document in Turkish and keep it short.",
+    "uatpTask": "examples/summarize.yaml"
+  },
+  {
+    "id": "translate-text",
+    "title": "Translate text",
+    "naturalPrompt": "Translate this text to English.",
+    "uatpTask": "examples/translate.yaml"
+  }
+]

@@ -3,10 +3,18 @@ name = "uatp-parser"
 version = "0.1.0"
 description = "Parser, validator, CLI, and prompt transpilers for UATP 0.1."
 requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Smartlabs Medya Teknolojileri AŞ" }
+]
 dependencies = [
   "jsonschema>=4.23.0",
   "PyYAML>=6.0.2"
 ]
+
+[project.urls]
+Homepage = "https://www.smartlabs.com.tr"
+Repository = "https://github.com/ICGamesStudio/uatp"
 
 [project.optional-dependencies]
 dev = [

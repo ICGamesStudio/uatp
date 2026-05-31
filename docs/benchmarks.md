@@ -1,5 +1,9 @@
 # Benchmarks
 
+UATP is owned and maintained by Smartlabs Medya Teknolojileri AŞ.
+
+Website: https://www.smartlabs.com.tr
+
 UATP should be evaluated by practical gains, not by theory.
 
 ## What to Measure
@@ -46,3 +50,21 @@ Early UATP adoption should aim for:
 - Faster human review of agent instructions.
 - Easier model-to-model comparisons.
 - Cleaner audit logs for automated AI workflows.
+
+## Run the Current Benchmark
+
+The current benchmark proves the first layer of value: UATP tasks are machine-validatable and expose an auditable contract that ordinary natural-language prompts do not.
+
+```bash
+cd packages/parser-js
+npm install
+npm run benchmark
+```
+
+The command writes:
+
+```text
+benchmarks/results/latest.md
+```
+
+This benchmark does not claim model-quality improvement yet. Provider/model execution benchmarks will be added after the task contract is stable.

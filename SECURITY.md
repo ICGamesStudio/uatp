@@ -1,5 +1,9 @@
 # Security Policy
 
+This repository is owned and maintained by Smartlabs Medya Teknolojileri AŞ.
+
+Website: https://www.smartlabs.com.tr
+
 UATP documents can carry instructions and untrusted context. Implementations must treat these separately.
 
 ## Prompt Injection Boundary
@@ -18,4 +22,4 @@ Examples:
 
 ## Reporting
 
-This project is not yet public. Until a public repository exists, report security issues privately to the maintainers.
+Report security issues privately to the maintainers through the Smartlabs contact channels listed at https://www.smartlabs.com.tr.

@@ -1,5 +1,9 @@
 # Value Proposition
 
+UATP is owned and maintained by Smartlabs Medya Teknolojileri AŞ.
+
+Website: https://www.smartlabs.com.tr
+
 UATP gives teams a stable task contract for AI agent work.
 
 ## Business Value

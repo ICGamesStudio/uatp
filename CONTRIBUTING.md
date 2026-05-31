@@ -1,5 +1,9 @@
 # Contributing
 
+This repository is owned and maintained by Smartlabs Medya Teknolojileri AŞ.
+
+Website: https://www.smartlabs.com.tr
+
 UATP is early and intentionally strict. Contributions should improve interoperability, conformance, security, or real-world task execution.
 
 ## Development Rules
@@ -33,6 +37,14 @@ CLI:
 ```bash
 uatp validate examples/debug_code.yaml
 uatp transpile examples/debug_code.yaml --target claude
+```
+
+Benchmarks:
+
+```bash
+cd packages/parser-js
+npm install
+npm run benchmark
 ```
 
 ## Standardization Bar

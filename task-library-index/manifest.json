@@ -1,0 +1,11 @@
+{
+  "generated_by": "tools/build-task-index.js",
+  "protocol": "uatp",
+  "version": "0.1",
+  "task_count": 1000,
+  "index_files": [
+    "taxonomy.json",
+    "signatures.jsonl",
+    "lexical.jsonl"
+  ]
+}

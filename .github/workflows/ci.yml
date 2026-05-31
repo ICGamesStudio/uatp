@@ -18,6 +18,8 @@ jobs:
         run: npm test
       - working-directory: packages/parser-js
         run: npm run validate:library
+      - working-directory: packages/parser-js
+        run: npm run validate:index
 
   python:
     runs-on: ubuntu-latest

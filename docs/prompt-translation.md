@@ -135,6 +135,31 @@ The translator may adapt a matched library task, but it must preserve:
 
 If confidence is low, the runtime should ask a clarifying question instead of inventing missing details.
 
+## Current CLI Prototype
+
+Build the index:
+
+```bash
+cd packages/parser-js
+npm run build:index
+npm run validate:index
+```
+
+Translate a prompt:
+
+```bash
+npm run translate -- --prompt "Review this pull request and list security risks with evidence"
+```
+
+The prototype:
+
+- narrows search with a prebuilt lexical index
+- avoids scanning every YAML file during prompt translation
+- adapts the matched task into a valid UATP document
+- records `metadata.matched_task_id`
+- records an anonymized `metadata.prompt_fingerprint`
+- strips common email, phone, URL, and token-like secrets from the stored prompt example
+
 ## Contribution Hook
 
 After translation, the runtime can produce an anonymous contribution envelope from the normalized UATP task. The contribution should use the Learning Loop rules and must not include the raw prompt unless explicit donation mode is enabled.

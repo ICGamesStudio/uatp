@@ -20,6 +20,9 @@
     "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml",
     "generate:library": "node ../../tools/generate-task-library.js",
     "validate:library": "node ../../tools/validate-task-library.js",
+    "build:index": "node ../../tools/build-task-index.js",
+    "validate:index": "node ../../tools/validate-task-index.js",
+    "translate": "node ../../tools/translate-prompt.js",
     "benchmark": "node ../../benchmarks/run-benchmarks.js --write"
   },
   "dependencies": {

@@ -1,0 +1,460 @@
+{
+  "ai-operations": {
+    "title": "AI Operations",
+    "task_count": 50,
+    "intents": {
+      "review_code": 7,
+      "debug_code": 7,
+      "write_tests": 6,
+      "refactor_code": 6,
+      "summarize": 6,
+      "extract_information": 6,
+      "create_plan": 6,
+      "translate": 6
+    },
+    "output_formats": {
+      "review_findings": 7,
+      "diff_summary": 13,
+      "test_report": 6,
+      "markdown": 6,
+      "json": 6,
+      "plan": 6,
+      "plain_text": 6
+    }
+  },
+  "content-production": {
+    "title": "Content Production",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "customer-support": {
+    "title": "Customer Support",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "data-analytics": {
+    "title": "Data Analytics",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "debug_code": 6,
+      "write_tests": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "diff_summary": 12,
+      "test_report": 6
+    }
+  },
+  "devops": {
+    "title": "DevOps",
+    "task_count": 50,
+    "intents": {
+      "review_code": 7,
+      "debug_code": 7,
+      "summarize": 6,
+      "extract_information": 6,
+      "create_plan": 6,
+      "write_tests": 6,
+      "refactor_code": 6,
+      "translate": 6
+    },
+    "output_formats": {
+      "review_findings": 7,
+      "diff_summary": 13,
+      "markdown": 6,
+      "json": 6,
+      "plan": 6,
+      "test_report": 6,
+      "plain_text": 6
+    }
+  },
+  "education": {
+    "title": "Education",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "executive-operations": {
+    "title": "Executive Operations",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "finance-operations": {
+    "title": "Finance Operations",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "game-development": {
+    "title": "Game Development",
+    "task_count": 50,
+    "intents": {
+      "debug_code": 7,
+      "review_code": 7,
+      "write_tests": 6,
+      "refactor_code": 6,
+      "summarize": 6,
+      "extract_information": 6,
+      "create_plan": 6,
+      "translate": 6
+    },
+    "output_formats": {
+      "diff_summary": 13,
+      "review_findings": 7,
+      "test_report": 6,
+      "markdown": 6,
+      "json": 6,
+      "plan": 6,
+      "plain_text": 6
+    }
+  },
+  "healthcare-administration": {
+    "title": "Healthcare Administration",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "human-resources": {
+    "title": "Human Resources",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "knowledge-management": {
+    "title": "Knowledge Management",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "legal-operations": {
+    "title": "Legal Operations",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "review_code": 12,
+      "translate": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "review_findings": 12,
+      "plain_text": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "marketing-operations": {
+    "title": "Marketing Operations",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "procurement": {
+    "title": "Procurement",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "product-management": {
+    "title": "Product Management",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "research": {
+    "title": "Research",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "sales-operations": {
+    "title": "Sales Operations",
+    "task_count": 50,
+    "intents": {
+      "summarize": 7,
+      "extract_information": 7,
+      "create_plan": 6,
+      "translate": 6,
+      "review_code": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "markdown": 7,
+      "json": 7,
+      "plan": 6,
+      "plain_text": 6,
+      "review_findings": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "security": {
+    "title": "Security",
+    "task_count": 50,
+    "intents": {
+      "review_code": 7,
+      "summarize": 7,
+      "extract_information": 6,
+      "create_plan": 6,
+      "translate": 6,
+      "write_tests": 6,
+      "debug_code": 6,
+      "refactor_code": 6
+    },
+    "output_formats": {
+      "review_findings": 7,
+      "markdown": 7,
+      "json": 6,
+      "plan": 6,
+      "plain_text": 6,
+      "test_report": 6,
+      "diff_summary": 12
+    }
+  },
+  "software-engineering": {
+    "title": "Software Engineering",
+    "task_count": 50,
+    "intents": {
+      "debug_code": 7,
+      "review_code": 7,
+      "write_tests": 6,
+      "refactor_code": 6,
+      "summarize": 6,
+      "extract_information": 6,
+      "create_plan": 6,
+      "translate": 6
+    },
+    "output_formats": {
+      "diff_summary": 13,
+      "review_findings": 7,
+      "test_report": 6,
+      "markdown": 6,
+      "json": 6,
+      "plan": 6,
+      "plain_text": 6
+    }
+  }
+}

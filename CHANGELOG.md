@@ -7,6 +7,7 @@
 - Added generated task library tooling for 1,000 valid UATP task definitions.
 - Added task-library duplicate controls and public data-source policy.
 - Added learning-loop and prompt-to-UATP translation architecture.
+- Added task-library index, prompt translator prototype, and anonymous contribution envelope CLI.
 
 ## 0.1.0-dev
 

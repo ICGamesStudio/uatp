@@ -110,6 +110,16 @@ privacy:
   personal_data_included: false
 ```
 
+## Current CLI Prototype
+
+Create an anonymous contribution envelope from a validated UATP task:
+
+```bash
+node tools/create-contribution.js task-library/software-engineering/software-engineering-001.yaml
+```
+
+The envelope contains task pattern metadata and privacy flags. It does not include raw prompts, file contents, source code, or user data.
+
 ## Runtime Requirements
 
 A contributing runtime should:

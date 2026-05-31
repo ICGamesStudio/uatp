@@ -75,6 +75,14 @@ node src/cli.js validate ../../examples/debug_code.yaml
 node src/cli.js transpile ../../examples/debug_code.yaml --target openai
 ```
 
+Build the task index and translate a user prompt:
+
+```bash
+cd packages/parser-js
+npm run build:index
+npm run translate -- --prompt "Review this pull request and list security risks with evidence"
+```
+
 Validate a task with Python:
 
 ```bash

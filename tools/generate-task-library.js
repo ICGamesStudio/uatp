@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from "node:fs";
+import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -39,20 +40,35 @@ const variations = [
   { risk: "medium", change: "minimal", language: "tr", style: "action-oriented", outputLanguage: "tr" }
 ];
 
+const scenarios = [
+  "new-project-bootstrap",
+  "existing-codebase-maintenance",
+  "production-incident-response",
+  "team-handoff",
+  "quality-audit",
+  "migration-work",
+  "performance-review",
+  "compliance-check",
+  "documentation-refresh",
+  "release-readiness"
+];
+
 fs.rmSync(libraryDir, { recursive: true, force: true });
 fs.mkdirSync(libraryDir, { recursive: true });
 
 const manifest = {
-  generated_at: new Date().toISOString(),
+  generated_by: "tools/generate-task-library.js",
   owner: "Smartlabs Medya Teknolojileri AŞ",
   website: "https://www.smartlabs.com.tr",
   protocol: "uatp",
   version: "0.1",
   task_count: 0,
+  semantic_signature_count: 0,
   domains: []
 };
 
 let count = 0;
+const semanticSignatures = new Set();
 for (const domainDef of domains) {
   const domainDir = path.join(libraryDir, domainDef.id);
   fs.mkdirSync(domainDir, { recursive: true });
@@ -61,8 +77,18 @@ for (const domainDef of domains) {
   for (let i = 0; i < 50; i += 1) {
     const pattern = domainDef.patterns[i % domainDef.patterns.length];
     const variation = variations[i % variations.length];
+    const scenario = scenarios[Math.floor(i / domainDef.patterns.length) % scenarios.length];
     const id = `${domainDef.id}-${String(i + 1).padStart(3, "0")}`;
-    const task = buildTask(id, domainDef, pattern, variation, i);
+    const task = buildTask(id, domainDef, pattern, variation, scenario, i);
+    const semanticSignature = hashObject(toSemanticSignature(task));
+
+    if (semanticSignatures.has(semanticSignature)) {
+      throw new Error(`Duplicate semantic task signature generated for ${id}`);
+    }
+
+    semanticSignatures.add(semanticSignature);
+    task.metadata.semantic_signature = semanticSignature;
+    task.metadata.content_hash = hashObject(task);
 
     fs.writeFileSync(path.join(domainDir, `${id}.yaml`), renderYaml(task));
     count += 1;
@@ -73,10 +99,15 @@ for (const domainDef of domains) {
 }
 
 manifest.task_count = count;
+manifest.semantic_signature_count = semanticSignatures.size;
 fs.writeFileSync(path.join(libraryDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 
 if (count < targetCount) {
   throw new Error(`Expected at least ${targetCount} tasks, generated ${count}`);
+}
+
+if (semanticSignatures.size !== count) {
+  throw new Error(`Expected ${count} unique semantic signatures, got ${semanticSignatures.size}`);
 }
 
 console.log(`Generated ${count} UATP tasks in ${path.relative(root, libraryDir)}`);
@@ -85,7 +116,7 @@ function domain(id, title, audience, target, patterns) {
   return { id, title, audience, target, patterns };
 }
 
-function buildTask(id, domainDef, pattern, variation, index) {
+function buildTask(id, domainDef, pattern, variation, scenario, index) {
   const intent = inferIntent(pattern);
   const outputFormat = inferOutputFormat(intent);
 
@@ -95,7 +126,7 @@ function buildTask(id, domainDef, pattern, variation, index) {
     intent,
     scope: {
       target: domainDef.target,
-      path: domainDef.target === "repository" ? "." : `${domainDef.id}/source-${(index % 10) + 1}`
+      path: domainDef.target === "repository" ? "." : `${domainDef.id}/source-${index + 1}`
     },
     actions: inferActions(intent),
     success_criteria: successCriteria(intent, domainDef, pattern),
@@ -109,9 +140,10 @@ function buildTask(id, domainDef, pattern, variation, index) {
     context: {
       domain: domainDef.title,
       audience: domainDef.audience,
+      scenario,
       request_pattern: pattern,
       expected_business_value: businessValue(intent),
-      example_user_request: `Please ${pattern} for this ${domainDef.title.toLowerCase()} workflow.`
+      example_user_request: `Please ${pattern} for this ${domainDef.title.toLowerCase()} ${scenario.replaceAll("-", " ")} workflow.`
     },
     output: {
       format: outputFormat,
@@ -127,6 +159,43 @@ function buildTask(id, domainDef, pattern, variation, index) {
       website: "https://www.smartlabs.com.tr"
     }
   };
+}
+
+function toSemanticSignature(task) {
+  return {
+    intent: task.intent,
+    scope: {
+      target: task.scope.target
+    },
+    actions: task.actions,
+    success_criteria: task.success_criteria,
+    constraints: task.constraints,
+    context: {
+      domain: task.context.domain,
+      audience: task.context.audience,
+      scenario: task.context.scenario,
+      request_pattern: task.context.request_pattern,
+      expected_business_value: task.context.expected_business_value
+    },
+    output: task.output
+  };
+}
+
+function hashObject(value) {
+  return crypto.createHash("sha256").update(stableStringify(value)).digest("hex");
+}
+
+function stableStringify(value) {
+  if (Array.isArray(value)) {
+    return `[${value.map(stableStringify).join(",")}]`;
+  }
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value)
+      .sort()
+      .map((key) => `${JSON.stringify(key)}:${stableStringify(value[key])}`)
+      .join(",")}}`;
+  }
+  return JSON.stringify(value);
 }
 
 function inferIntent(pattern) {

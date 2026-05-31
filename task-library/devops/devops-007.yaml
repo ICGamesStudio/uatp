@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "refactor automation scripts"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor automation scripts for this devops workflow."
+  example_user_request: "Please refactor automation scripts for this devops new project bootstrap workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "d9b8ea11c273b2a457974e0c410a8de8d6a014ada7c7d2a2f7d0148c64c73e51"
+  content_hash: "42843ec163a627a2f6104f5a503b41f5432ca1b05cbf88a530657ee3b7d76c8e"

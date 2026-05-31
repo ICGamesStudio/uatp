@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "content-production/source-8"
+  path: "content-production/source-28"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Content Production"
   audience: "content teams"
+  scenario: "team-handoff"
   request_pattern: "translate draft content"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate draft content for this content production workflow."
+  example_user_request: "Please translate draft content for this content production team handoff workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "69f855acc7459e550f460f71c0f404b0121e04f83dad9500096ce9e451649764"
+  content_hash: "c5d5eeabfa3bddc08e8e761e6ade8b76d6db46888442b7b167882807863e162d"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "human-resources/source-3"
+  path: "human-resources/source-33"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "quality-audit"
   request_pattern: "summarize interview feedback"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize interview feedback for this human resources workflow."
+  example_user_request: "Please summarize interview feedback for this human resources quality audit workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c7e28e04eb8cf6dcbe6f2cc814f5bcd93272970f26689b5719dbc2eb9f42247b"
+  content_hash: "a4fb04593711436dbc188ef5003c71cb6532bef5f01f697bb1e6cb46227ebb7d"

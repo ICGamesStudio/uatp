@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "healthcare-admin/source-3"
+  path: "healthcare-admin/source-23"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Healthcare Administration"
   audience: "healthcare operations teams"
+  scenario: "production-incident-response"
   request_pattern: "debug scheduling workflow"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug scheduling workflow for this healthcare administration workflow."
+  example_user_request: "Please debug scheduling workflow for this healthcare administration production incident response workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "6456784f3c8a01c566702944dbabf0f2c97398f62fed08bf57a804ae2ac4a0db"
+  content_hash: "96326e25636398e8e23cdad5679b9cba64d6a14c9820b87efc1c53f03779e426"

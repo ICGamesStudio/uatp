@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "team-handoff"
   request_pattern: "translate developer notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate developer notes for this software engineering workflow."
+  example_user_request: "Please translate developer notes for this software engineering team handoff workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "fe1ad9c525d7786b138791ff49775b6eea01f05789eaac22249c9bcaddbe8874"
+  content_hash: "1a605c813397dc09427774d9f70cac7d5c20ca381db5bec913402c7b570db9b2"

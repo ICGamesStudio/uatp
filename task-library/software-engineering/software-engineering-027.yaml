@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "team-handoff"
   request_pattern: "write missing regression tests"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write missing regression tests for this software engineering workflow."
+  example_user_request: "Please write missing regression tests for this software engineering team handoff workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "0c2026c4a768468efc5653a9f560fab665c2cbec8c9c6b5ea35847723131490d"
+  content_hash: "e3019e5b77e470d5e118cc145fbd08acbf1c5f8a42b78e5a1078d852357a0724"

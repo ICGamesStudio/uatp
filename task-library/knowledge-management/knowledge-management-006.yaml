@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "write freshness checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write freshness checks for this knowledge management workflow."
+  example_user_request: "Please write freshness checks for this knowledge management new project bootstrap workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "28f7d791c7deb5ea1240825c7fb837f4643e08bdb7f3457e03019bc11da1aa20"
+  content_hash: "8f1cce03afebb351fb471486dc67db06a33847c83a3c34020c28515ed98cec78"

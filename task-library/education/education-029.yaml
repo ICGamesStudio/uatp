@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "education/source-9"
+  path: "education/source-29"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "team-handoff"
   request_pattern: "review assessment clarity"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review assessment clarity for this education workflow."
+  example_user_request: "Please review assessment clarity for this education team handoff workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f0b30f77a7aa0d19b68068a69458ed646627022cfae45a364714863e67c616ef"
+  content_hash: "5e6bdf6694a6d62b87412027ccfc08962d5d6f57e2d1fa6c31c12299b9c19e4d"

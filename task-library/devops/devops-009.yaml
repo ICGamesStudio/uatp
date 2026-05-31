@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "review a CI workflow"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review a CI workflow for this devops workflow."
+  example_user_request: "Please review a CI workflow for this devops existing codebase maintenance workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "b8a32f0b1aee42302f0be51c262e6c32e58136d233f4455da7427707c4222480"
+  content_hash: "f8ef6cb2a3a5d2087f499c94d809c147717ff92b1a52153c2d8248f831c1ddc0"

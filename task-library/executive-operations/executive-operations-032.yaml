@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "executive-operations/source-2"
+  path: "executive-operations/source-32"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Executive Operations"
   audience: "leadership teams"
+  scenario: "team-handoff"
   request_pattern: "refactor briefing structure"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor briefing structure for this executive operations workflow."
+  example_user_request: "Please refactor briefing structure for this executive operations team handoff workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "5d6b7406a31259858af5007e2eaa89f93041570d2ed0197116a5d370e15bf37c"
+  content_hash: "64fde560d26e8d98796d781f2bf5c32bc9e67718e8b6e5d1f9b05f439b16c061"

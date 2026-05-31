@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "knowledge-management/source-2"
+  path: "knowledge-management/source-22"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "production-incident-response"
   request_pattern: "write freshness checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write freshness checks for this knowledge management workflow."
+  example_user_request: "Please write freshness checks for this knowledge management production incident response workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "62caff5d0539244d4f379f838817399bf27a796daf9b3ab693a7452001bd2680"
+  content_hash: "f00a93cbb29bef34a53972bc2e9d8e1dfa4cb6a8a69a28bcf5c4a2f64bfbe3f5"

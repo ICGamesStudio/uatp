@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "procurement/source-4"
+  path: "procurement/source-24"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "production-incident-response"
   request_pattern: "refactor request document"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor request document for this procurement workflow."
+  example_user_request: "Please refactor request document for this procurement production incident response workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "84063bc6bab3dbca94bce21813e97f978f0c888be35adb6b14dae569a0bc40c9"
+  content_hash: "fa8658c4b3ffa5e1ffcbc64935bf91c713890411a2e61032eef9de7ee5c05ec9"

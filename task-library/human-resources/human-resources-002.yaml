@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "extract hiring criteria"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract hiring criteria for this human resources workflow."
+  example_user_request: "Please extract hiring criteria for this human resources new project bootstrap workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "bf0ad0090fb1e871d9beeb66d3782e292a84723bb8f72e3f1397eac0cc2a3210"
+  content_hash: "b28166beb6fb443aec1378c9315bdd6a956f8140e51fb2b24c3daf425ef1862a"

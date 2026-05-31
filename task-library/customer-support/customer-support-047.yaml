@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "conversation"
-  path: "customer-support/source-7"
+  path: "customer-support/source-47"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Customer Support"
   audience: "support teams"
+  scenario: "migration-work"
   request_pattern: "debug a reported workflow"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a reported workflow for this customer support workflow."
+  example_user_request: "Please debug a reported workflow for this customer support migration work workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "9fecae8844c36078be1a51eda59731183efcde0179f7dc66a33ed788da9bc574"
+  content_hash: "04d78ac52e7a48546750a9e675660fd1ace7fccd72e8231df8e3d4c419892bd0"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "healthcare-admin/source-5"
+  path: "healthcare-admin/source-25"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Healthcare Administration"
   audience: "healthcare operations teams"
+  scenario: "team-handoff"
   request_pattern: "summarize administrative notes"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize administrative notes for this healthcare administration workflow."
+  example_user_request: "Please summarize administrative notes for this healthcare administration team handoff workflow."
 output:
   format: "markdown"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "86790d525bb9f58b4b11239234bbf7619943dbaed614e39cff49c027e263ee1b"
+  content_hash: "418be9c795cb4f1644dd45738c96c73b1feba9189c0b9ff7f548aaf527c20e01"

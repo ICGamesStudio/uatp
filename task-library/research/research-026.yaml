@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "research/source-6"
+  path: "research/source-26"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "team-handoff"
   request_pattern: "extract research questions"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract research questions for this research workflow."
+  example_user_request: "Please extract research questions for this research team handoff workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "89da8e19cab18eaecd878c32df09e20dd7b35d9e1ec8395fc85d253183cc0851"
+  content_hash: "3c700652473b54087ce2d0b618e0cbc9c39aaecfda3b9187463f5c6d788d395e"

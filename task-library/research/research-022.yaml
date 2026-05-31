@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "research/source-2"
+  path: "research/source-22"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "production-incident-response"
   request_pattern: "write evaluation checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write evaluation checks for this research workflow."
+  example_user_request: "Please write evaluation checks for this research production incident response workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "075387fcc0e85edd60367cdf4d22a5f4db0a1d6f1dd66b3af042521a447ec0ae"
+  content_hash: "3f34586caa094f5f28e03a7da7bf05f71c10d6b353b981afb108432c0f1ffed1"

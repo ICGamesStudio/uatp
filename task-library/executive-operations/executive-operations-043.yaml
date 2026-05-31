@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "executive-operations/source-3"
+  path: "executive-operations/source-43"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Executive Operations"
   audience: "leadership teams"
+  scenario: "migration-work"
   request_pattern: "create an action plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create an action plan for this executive operations workflow."
+  example_user_request: "Please create an action plan for this executive operations migration work workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4ea9a91d908367fb89c467eeed2dd2010b06a7bacbf5221891db54289459e9bb"
+  content_hash: "b38d52f6940b77d84b5546fa5156f99ab5b53c5ea58d989cbef3846b8b489459"

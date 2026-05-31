@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "data-analytics/source-3"
+  path: "data-analytics/source-33"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "quality-audit"
   request_pattern: "summarize a metrics report"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize a metrics report for this data analytics workflow."
+  example_user_request: "Please summarize a metrics report for this data analytics quality audit workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f4da955d973a876b270614da1fbff3b7ae2cc7cd15258cf0e270dd2f02c8f013"
+  content_hash: "c61f453cab94f7f78db3f63c8db3341f05e9404fb26f9c39aa0079b5cf40a614"

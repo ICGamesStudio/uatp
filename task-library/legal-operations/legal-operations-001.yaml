@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Legal Operations"
   audience: "legal teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "summarize contract terms"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize contract terms for this legal operations workflow."
+  example_user_request: "Please summarize contract terms for this legal operations new project bootstrap workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "e81f6517b8b39963c0a4eeefbf2305c0bc4847f233f4b30d0ff15a7218ad69bc"
+  content_hash: "a9f30509416ff46f404bc38a69170824990523a674c89c44c20155a116b58086"

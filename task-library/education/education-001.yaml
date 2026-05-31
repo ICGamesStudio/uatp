@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "summarize lesson material"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize lesson material for this education workflow."
+  example_user_request: "Please summarize lesson material for this education new project bootstrap workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f178772cd47855ce2a4fc343c9cb1bc83028aedfc0328bdb1677a3c1818a4343"
+  content_hash: "091de650c5974a0219aa2f6b7aa1da30d80edd08b4216af8f9fe170bdf63a62e"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "ai-operations/source-2"
+  path: "ai-operations/source-12"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "refactor prompt templates"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor prompt templates for this ai operations workflow."
+  example_user_request: "Please refactor prompt templates for this ai operations existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f6612f16039326696fa0f67118ec2fd3917d40a72195430d1dbdcd8912cce151"
+  content_hash: "90db1c0d236aad48bfe7d9ee8f98a2509ae1f8751b40d78b7512ea154ff24b65"

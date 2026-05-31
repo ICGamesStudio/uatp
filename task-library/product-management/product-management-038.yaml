@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "product-management/source-8"
+  path: "product-management/source-38"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "quality-audit"
   request_pattern: "write acceptance tests"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write acceptance tests for this product management workflow."
+  example_user_request: "Please write acceptance tests for this product management quality audit workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "ac1f14cfb7971804fa2438eb20c1276bc98802b083673dfd13d8fbdbc4fd9919"
+  content_hash: "d2dfd66fbc21139ea7554758f31f1de5da2b9ed90ff40d04bb0372c128dc231b"

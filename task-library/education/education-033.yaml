@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "education/source-3"
+  path: "education/source-33"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "quality-audit"
   request_pattern: "summarize lesson material"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize lesson material for this education workflow."
+  example_user_request: "Please summarize lesson material for this education quality audit workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "a8a5b2a79a8e86ec2ca7d5edd6617d5d78bdc1f09b98673c297e9f95f21d371b"
+  content_hash: "5159d850a7930c2af712443201b36f42780653fb04ff2a8b3fba32a64e065737"

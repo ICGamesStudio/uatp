@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "ai-operations/source-6"
+  path: "ai-operations/source-16"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "translate eval notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate eval notes for this ai operations workflow."
+  example_user_request: "Please translate eval notes for this ai operations existing codebase maintenance workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "97b61cdc00a9c03d0be26429e9f7e96fe72fe2a095641d4e1056bb6312c085d0"
+  content_hash: "53c2fab6b66d3a563594655bab6c13e71c68380cb61408d7596a3889ee804189"

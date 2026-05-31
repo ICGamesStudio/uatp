@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "finance-operations/source-1"
+  path: "finance-operations/source-21"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "production-incident-response"
   request_pattern: "review invoice fields"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review invoice fields for this finance operations workflow."
+  example_user_request: "Please review invoice fields for this finance operations production incident response workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "26a26c7e4f274bde193df4d5ecb4f29f219a42b13e2e0241d9ed1f23c571ce05"
+  content_hash: "72851f09a7c7f98815bd1c12be27d1f59327f9e6250c79c7cf4ac5e79f0d8c6c"

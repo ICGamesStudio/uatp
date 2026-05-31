@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "team-handoff"
   request_pattern: "translate runbook notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate runbook notes for this devops workflow."
+  example_user_request: "Please translate runbook notes for this devops team handoff workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "9b181b83aaa25a5c83fa7b08c28d970e7c70a63b831a7866c22dbca315962525"
+  content_hash: "d73c3a6c9d437b21d37ca3ed863381f4f52c16a54a8a0d23d9db841c7bd2b83d"

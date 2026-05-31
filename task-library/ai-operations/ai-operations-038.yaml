@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "ai-operations/source-8"
+  path: "ai-operations/source-38"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "quality-audit"
   request_pattern: "extract task requirements"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract task requirements for this ai operations workflow."
+  example_user_request: "Please extract task requirements for this ai operations quality audit workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "1a20aae20287f617a98ab3b780a598d82738a44cbbf772e0c73a05e111066e67"
+  content_hash: "5287cec09b306b926cf9e03dd7859c60d3ceda88f3e76c9fd6b274ea5fd84c54"

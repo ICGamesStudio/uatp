@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "product-management/source-1"
+  path: "product-management/source-11"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "create a product plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a product plan for this product management workflow."
+  example_user_request: "Please create a product plan for this product management existing codebase maintenance workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "d4b7bc658cd136ffcabc2848ab67bf6a4452ecc2ea99c0d7f987d41c8d59977a"
+  content_hash: "0791c8a9f663f235a34404c6d14686a52249983419b63d2071f5b835bb0a3a6a"

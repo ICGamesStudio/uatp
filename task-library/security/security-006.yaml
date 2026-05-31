@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "write verification steps"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write verification steps for this security workflow."
+  example_user_request: "Please write verification steps for this security new project bootstrap workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "7099988642c33be7577fc2583a4725a978f1e86a936685b4b9ee98e8bde05fb1"
+  content_hash: "b5283d3d2d98b4dc05381d6dc1eae69f7f4a731d7506cc166c92523eb639b578"

@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "translate abstract notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate abstract notes for this research workflow."
+  example_user_request: "Please translate abstract notes for this research new project bootstrap workflow."
 output:
   format: "plain_text"
   language: "tr"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "d361fc21911a01fd65a07870461062d61218dd5507be69a1e6debef44a4e05e5"
+  content_hash: "c2daf2f40bc6290a1d46d134af1d5bd9d96d7efe619af9fa38ba7b8316ef42ad"

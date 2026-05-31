@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Healthcare Administration"
   audience: "healthcare operations teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "summarize administrative notes"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize administrative notes for this healthcare administration workflow."
+  example_user_request: "Please summarize administrative notes for this healthcare administration new project bootstrap workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c927196ff816194da40376f0c165afc54b939bfe4b2df4d0a022183344d49552"
+  content_hash: "224f512a214c9f76c098bd62697d343785d659f3059ce425a8fd76210a1bc20b"

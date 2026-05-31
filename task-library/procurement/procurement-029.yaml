@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "procurement/source-9"
+  path: "procurement/source-29"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "team-handoff"
   request_pattern: "review requirement coverage"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review requirement coverage for this procurement workflow."
+  example_user_request: "Please review requirement coverage for this procurement team handoff workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "63c0f8b0451802265cb01613962644278a10721f4e18e5511545abb1f32f3e5a"
+  content_hash: "6f531f5a66286d12c56a466c2b51511094264d65d05052d36cef69099eca5ee6"

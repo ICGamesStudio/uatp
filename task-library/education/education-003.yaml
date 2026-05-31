@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "create a study plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a study plan for this education workflow."
+  example_user_request: "Please create a study plan for this education new project bootstrap workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "b3ae71095e3fb357cb63fca04961663dc3a4745df2a033303e2d3b15b6d45f78"
+  content_hash: "a564036012bab23472526bed33fffa5eba77d4718d3918b9c4f96e1c467839f1"

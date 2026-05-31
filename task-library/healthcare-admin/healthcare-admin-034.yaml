@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "healthcare-admin/source-4"
+  path: "healthcare-admin/source-34"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Healthcare Administration"
   audience: "healthcare operations teams"
+  scenario: "quality-audit"
   request_pattern: "extract appointment requirements"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract appointment requirements for this healthcare administration workflow."
+  example_user_request: "Please extract appointment requirements for this healthcare administration quality audit workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4a41b7cd65ba8afdd75b142b3c1f3ba9e86bc1e392b83d981f350cb179a8ddab"
+  content_hash: "8918af704e0bebd03d1d4bd1548b7afa26e22b375454e1811b08500c3b5815bd"

@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "team-handoff"
   request_pattern: "summarize infrastructure changes"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize infrastructure changes for this devops workflow."
+  example_user_request: "Please summarize infrastructure changes for this devops team handoff workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "70d1d84f93338de229b99561b7a34a03ed18409064302a9fde2205ff4f5241d9"
+  content_hash: "1a54253bdc7d6c5bfcfafff4500ced88349f27a42d7293b660cea4aece43ae9e"

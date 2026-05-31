@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "migration-work"
   request_pattern: "refactor a module without behavior changes"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor a module without behavior changes for this software engineering workflow."
+  example_user_request: "Please refactor a module without behavior changes for this software engineering migration work workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "fc71e3bb38142166a1aadfc97040b7af352b62641016b391cc3ba33f6034aedf"
+  content_hash: "7f246fdac9dd274513b4414130b3c39be2100e266ae0f077dbc0c0bf95472791"

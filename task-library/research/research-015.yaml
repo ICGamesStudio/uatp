@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "research/source-5"
+  path: "research/source-15"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "debug reproducibility issue"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug reproducibility issue for this research workflow."
+  example_user_request: "Please debug reproducibility issue for this research existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f8a58b3433d7a34bb9bc499fdd460118386ae2a89435544995d234952e4831b9"
+  content_hash: "3e41da522e64d68d88cd81604a92d28353e382c81e4e08ed1b89e7068a1c662d"

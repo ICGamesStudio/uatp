@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "human-resources/source-4"
+  path: "human-resources/source-34"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "quality-audit"
   request_pattern: "extract hiring criteria"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract hiring criteria for this human resources workflow."
+  example_user_request: "Please extract hiring criteria for this human resources quality audit workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4d29aeeceaab0bff4fa729a477753f82b34655bdbb2b9ae95514e482ef5fe23f"
+  content_hash: "7b7446fcdab585fb2f75d07200b1a371df24a74a9c8eb2b17a4f171c9cb48c39"

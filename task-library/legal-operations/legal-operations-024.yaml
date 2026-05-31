@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "legal-operations/source-4"
+  path: "legal-operations/source-24"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Legal Operations"
   audience: "legal teams"
+  scenario: "production-incident-response"
   request_pattern: "refactor policy language"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor policy language for this legal operations workflow."
+  example_user_request: "Please refactor policy language for this legal operations production incident response workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "107adb4662e354f5456095c9ff533569c1313245b48710d2d7a9f8394fac5533"
+  content_hash: "85d70e9c4087861f76cae331fc1c22bb2b6c766a8ec129090e65c765037ed0ca"

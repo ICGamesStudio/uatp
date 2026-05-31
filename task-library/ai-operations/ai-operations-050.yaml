@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "ai-operations/source-10"
+  path: "ai-operations/source-50"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "performance-review"
   request_pattern: "debug an evaluation failure"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug an evaluation failure for this ai operations workflow."
+  example_user_request: "Please debug an evaluation failure for this ai operations performance review workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4399fbbecd80db9afc61d72095b4266ff9c707c3c773842747e20fe5487ddad5"
+  content_hash: "f7b3b3899e9f18f82c3191274517336cc99ba087e0f33e46ac53750f05434943"

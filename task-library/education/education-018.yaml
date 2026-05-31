@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "education/source-8"
+  path: "education/source-18"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "production-incident-response"
   request_pattern: "extract learning objectives"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract learning objectives for this education workflow."
+  example_user_request: "Please extract learning objectives for this education production incident response workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "255c2bfc4b88bc82899b289b441c377671e0dde626a9fa7b3550f8290a5a63fd"
+  content_hash: "ec1a38d28b3697afe123fc91594f66ab04a08b42c80fc819b748290e34a718e0"

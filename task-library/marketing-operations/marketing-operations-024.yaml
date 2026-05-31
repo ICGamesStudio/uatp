@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "marketing-operations/source-4"
+  path: "marketing-operations/source-24"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Marketing Operations"
   audience: "marketing teams"
+  scenario: "production-incident-response"
   request_pattern: "refactor brief wording"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor brief wording for this marketing operations workflow."
+  example_user_request: "Please refactor brief wording for this marketing operations production incident response workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "331807d63c52c81fe3c2f2581e273eb23e49388776ec41aca50e285ce4a44567"
+  content_hash: "03fdf2c1bee7a1c51507f4711d24f06d87ccd445af66277f9df2cc0efa3e0892"

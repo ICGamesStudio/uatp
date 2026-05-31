@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "sales-operations/source-9"
+  path: "sales-operations/source-49"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Sales Operations"
   audience: "sales teams"
+  scenario: "performance-review"
   request_pattern: "summarize pipeline notes"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize pipeline notes for this sales operations workflow."
+  example_user_request: "Please summarize pipeline notes for this sales operations performance review workflow."
 output:
   format: "markdown"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "506ed5b1e317e2db5cd5b60b973b3eb63f1d3db87c511f9bbc4cb95423e1981b"
+  content_hash: "e3e43f0f2fd9c7e2c97b54d7c436844163142e4d43c8f6498b3165d3da3c0f17"

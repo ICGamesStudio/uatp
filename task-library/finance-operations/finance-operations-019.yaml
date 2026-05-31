@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "finance-operations/source-9"
+  path: "finance-operations/source-19"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "production-incident-response"
   request_pattern: "create a reconciliation plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a reconciliation plan for this finance operations workflow."
+  example_user_request: "Please create a reconciliation plan for this finance operations production incident response workflow."
 output:
   format: "plan"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "efbaf510df2edb71ec4cffcbf7c59131b2bfcbdac599af06df0980bb7c53b254"
+  content_hash: "901d1033cfb1fb9d1d7707d8a3a6b4ae9778003c95b7958b4957c23704f6e860"

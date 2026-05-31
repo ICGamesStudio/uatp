@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "quality-audit"
   request_pattern: "create an implementation plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create an implementation plan for this software engineering workflow."
+  example_user_request: "Please create an implementation plan for this software engineering quality audit workflow."
 output:
   format: "plan"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "8f2ed0ccad21933d4b5006bf78f9f77cdddc599c933e87fb64268bfb2bbb24f3"
+  content_hash: "7e4ca837d58f86d3dbc3aa808e16d208812f05ac7b55fd136542b695fb76e110"

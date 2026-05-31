@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "sales-operations/source-6"
+  path: "sales-operations/source-46"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Sales Operations"
   audience: "sales teams"
+  scenario: "migration-work"
   request_pattern: "write CRM validation checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write CRM validation checks for this sales operations workflow."
+  example_user_request: "Please write CRM validation checks for this sales operations migration work workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "857f3b041d2607f86efa39e96a7f745deed25fc8fd632e99e5ac3aecc42e089b"
+  content_hash: "ae75cacb134598b3b610eee7ba658d578b4508a9e62cdbef8ed4d6ed066ddb00"

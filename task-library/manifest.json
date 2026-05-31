@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-05-31T17:54:57.215Z",
+  "generated_by": "tools/generate-task-library.js",
   "owner": "Smartlabs Medya Teknolojileri AŞ",
   "website": "https://www.smartlabs.com.tr",
   "protocol": "uatp",
   "version": "0.1",
   "task_count": 1000,
+  "semantic_signature_count": 1000,
   "domains": [
     {
       "id": "software-engineering",

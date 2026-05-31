@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "human-resources/source-8"
+  path: "human-resources/source-48"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "migration-work"
   request_pattern: "refactor handbook content"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor handbook content for this human resources workflow."
+  example_user_request: "Please refactor handbook content for this human resources migration work workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "297f4fb8ae6415be0f53d059c938c9344bf8131a0b540920938ca1d663549240"
+  content_hash: "9965a9d02ccc66bf3deceb747f029c45cf4da57b06e740e39fb03c2ed0db562f"

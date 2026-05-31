@@ -51,9 +51,19 @@ def test_cli_accepts_target_flag() -> None:
 
 def test_task_library_contains_at_least_1000_valid_tasks() -> None:
     fixtures = sorted(TASK_LIBRARY_DIR.glob("*/*.yaml"))
+    semantic_signatures = {}
 
     assert len(fixtures) >= 1000
 
     for fixture in fixtures:
-        valid, errors = validate_uatp(load_uatp(fixture))
+        task = load_uatp(fixture)
+        valid, errors = validate_uatp(task)
         assert valid, (fixture, errors)
+
+        semantic_signature = task.get("metadata", {}).get("semantic_signature")
+        assert semantic_signature
+        assert semantic_signature not in semantic_signatures, (
+            fixture,
+            semantic_signatures.get(semantic_signature),
+        )
+        semantic_signatures[semantic_signature] = fixture

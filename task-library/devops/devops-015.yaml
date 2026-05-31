@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "refactor automation scripts"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor automation scripts for this devops workflow."
+  example_user_request: "Please refactor automation scripts for this devops existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "ffe49a869eb4466b49322c935740347a854aab1842b1b58ee8ad7173b09f0f99"
+  content_hash: "3c67dc1a92ae4113a3e0049bf6fc21cf42546fa77c45b9126b0ecd07ccffe27b"

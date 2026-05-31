@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "research/source-2"
+  path: "research/source-12"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "translate abstract notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate abstract notes for this research workflow."
+  example_user_request: "Please translate abstract notes for this research existing codebase maintenance workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "9baa62129c0eb91a32c6f05f642ac97c7ff7a0c00be24d3fcb96a1fcbb87d97d"
+  content_hash: "dd886ef7583fefb048c8f0d5b250ef36e4354c11b18db35e2ad57de4fed56ca2"

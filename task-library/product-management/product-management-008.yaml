@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "refactor user stories"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor user stories for this product management workflow."
+  example_user_request: "Please refactor user stories for this product management new project bootstrap workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "2503713504bf395519747b3e0e3606c334b4d1a12f3975c3c17f5725c25548fa"
+  content_hash: "68362ba13e559e91cdad7dac9f3298f7489ccfc29a2ee39e47ccbab82bfd4d77"

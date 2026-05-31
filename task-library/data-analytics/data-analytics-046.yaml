@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "data-analytics/source-6"
+  path: "data-analytics/source-46"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "migration-work"
   request_pattern: "debug a data quality issue"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a data quality issue for this data analytics workflow."
+  example_user_request: "Please debug a data quality issue for this data analytics migration work workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "69e944f3db51df83cdfa1ea0c1a94748b981f49c31c3ef0b94ea00cc29a73682"
+  content_hash: "47fe764a69fedbfac2d13f6dfe046c3e334ebc8efa92ee9c64513ba00db261ff"

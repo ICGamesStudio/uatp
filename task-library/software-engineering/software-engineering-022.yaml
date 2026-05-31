@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "production-incident-response"
   request_pattern: "extract API contract details"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract API contract details for this software engineering workflow."
+  example_user_request: "Please extract API contract details for this software engineering production incident response workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "acfa39fb7de42e08a1d8b0ca9e6049053978bf0e48433fe88912f184bce3c479"
+  content_hash: "afad55274a660f403445198d63e45e3c7fa93704945ee5dfa8391ca7510edd24"

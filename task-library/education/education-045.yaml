@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "education/source-5"
+  path: "education/source-45"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "migration-work"
   request_pattern: "review assessment clarity"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review assessment clarity for this education workflow."
+  example_user_request: "Please review assessment clarity for this education migration work workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "7d6872025fcab0c71b24e41f86c4a83b6adb54d2c3376ce2662c393e41be04b8"
+  content_hash: "b4299b2a0760898bb00e3e7ff0437e77c95842598f153ade1899d5af5822da54"

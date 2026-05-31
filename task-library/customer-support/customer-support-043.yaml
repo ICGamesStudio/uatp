@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "conversation"
-  path: "customer-support/source-3"
+  path: "customer-support/source-43"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Customer Support"
   audience: "support teams"
+  scenario: "migration-work"
   request_pattern: "create a resolution plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a resolution plan for this customer support workflow."
+  example_user_request: "Please create a resolution plan for this customer support migration work workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c45d05a1e3987d88a1c05c7b35ea952d6c97763788e4a86e75248a3a9ab86035"
+  content_hash: "709de753d0936a2b1eb884af69d4aa6246f1e0f15213502a0ff19e480a4e3c3e"

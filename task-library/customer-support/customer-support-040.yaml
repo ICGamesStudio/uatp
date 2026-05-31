@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "conversation"
-  path: "customer-support/source-10"
+  path: "customer-support/source-40"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Customer Support"
   audience: "support teams"
+  scenario: "quality-audit"
   request_pattern: "refactor a help-center article"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor a help-center article for this customer support workflow."
+  example_user_request: "Please refactor a help-center article for this customer support quality audit workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "fc4e6332eb9e4d8c756471ee2ec71c9c0adbb8d2e84a87bfa2d63138f4b49acf"
+  content_hash: "3aa81e2304f51b5718591280c8a15dd5683352b3eac4e18036a26b81b8b1f517"

@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "extract budget variances"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract budget variances for this finance operations workflow."
+  example_user_request: "Please extract budget variances for this finance operations new project bootstrap workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "35598a717c47227dd463aae31adb6f67f7fbe33b7a9d2b24db92af4d180a9945"
+  content_hash: "1fd7d00436bdb96ea84a46f1449e6a4a48f848c5c5a98af0175462c53166add7"

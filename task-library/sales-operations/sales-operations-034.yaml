@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "sales-operations/source-4"
+  path: "sales-operations/source-34"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Sales Operations"
   audience: "sales teams"
+  scenario: "quality-audit"
   request_pattern: "extract qualification signals"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract qualification signals for this sales operations workflow."
+  example_user_request: "Please extract qualification signals for this sales operations quality audit workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "dfee2a5f720567e49715ff5551859953aca0f4d371d3f1ea66893bbee4fea1ca"
+  content_hash: "4ea874180f4870d7802cc7db9ea4aceacd01586adc7051901fb9845727c16ae4"

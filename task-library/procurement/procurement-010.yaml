@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "extract evaluation criteria"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract evaluation criteria for this procurement workflow."
+  example_user_request: "Please extract evaluation criteria for this procurement existing codebase maintenance workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "91c828916f276389d682052f5c7b659d1474351ee65c0f3ea8f7a3bf0b2e09ae"
+  content_hash: "db27a08079d04c13c35870f872b5b933d7b39e53848f53cc0276543f74f91d94"

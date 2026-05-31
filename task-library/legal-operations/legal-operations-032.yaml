@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "legal-operations/source-2"
+  path: "legal-operations/source-32"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Legal Operations"
   audience: "legal teams"
+  scenario: "team-handoff"
   request_pattern: "refactor policy language"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor policy language for this legal operations workflow."
+  example_user_request: "Please refactor policy language for this legal operations team handoff workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "eeb99244eb6cadb99e58398550a38620759fc5e3b7ea284693bfb8edfa9c38e0"
+  content_hash: "f03d3bffe8c4897a5044101103aeacb1c85f2c2baa36eb8b5a61587b487261a6"

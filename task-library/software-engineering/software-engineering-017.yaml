@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "production-incident-response"
   request_pattern: "debug a failing test suite"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a failing test suite for this software engineering workflow."
+  example_user_request: "Please debug a failing test suite for this software engineering production incident response workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "8eeeac78c24f9e8b1688930e8e5afae67f93eed0e3e5634df7b4408e893628e4"
+  content_hash: "4d5211c2cfc307dcb74f901b0a03e722a6e0b15fe581b7c034bdc31856586879"

@@ -19,6 +19,7 @@
     "test": "node test/conformance.test.js",
     "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml",
     "generate:library": "node ../../tools/generate-task-library.js",
+    "validate:library": "node ../../tools/validate-task-library.js",
     "benchmark": "node ../../benchmarks/run-benchmarks.js --write"
   },
   "dependencies": {

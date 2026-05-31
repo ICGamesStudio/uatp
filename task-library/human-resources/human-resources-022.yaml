@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "human-resources/source-2"
+  path: "human-resources/source-22"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "production-incident-response"
   request_pattern: "write checklist tests"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write checklist tests for this human resources workflow."
+  example_user_request: "Please write checklist tests for this human resources production incident response workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "eaab931e674123900aa488ccba42aa6fd1b5ef37e20a7fcc219ab7bee5113a97"
+  content_hash: "5ac87b88c7045fa3efcd00edc0e983de41e99c37a415257cecc698a6676201f9"

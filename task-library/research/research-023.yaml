@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "research/source-3"
+  path: "research/source-23"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "production-incident-response"
   request_pattern: "debug reproducibility issue"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug reproducibility issue for this research workflow."
+  example_user_request: "Please debug reproducibility issue for this research production incident response workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "502143bf03eb26240c04204bc8f33b5c6aaa8e9c135d5ff13176d1b603433df7"
+  content_hash: "e4dfc5f6671ef22f9ca45cd2ef6963e5841dbb194d3bec7a583b62ea474296db"

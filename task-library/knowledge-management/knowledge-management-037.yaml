@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "knowledge-management/source-7"
+  path: "knowledge-management/source-37"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "quality-audit"
   request_pattern: "review information architecture"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review information architecture for this knowledge management workflow."
+  example_user_request: "Please review information architecture for this knowledge management quality audit workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "852f23d63395b2c15af9ccd96ce04e34b939021703d0a1770f6986a1a66249d5"
+  content_hash: "07fe49b87faf4dfea7942130b7eec0c7308ae20e41b052bbeb772942e494b935"

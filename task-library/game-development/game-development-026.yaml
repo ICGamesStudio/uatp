@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Game Development"
   audience: "game teams"
+  scenario: "team-handoff"
   request_pattern: "review gameplay code"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review gameplay code for this game development workflow."
+  example_user_request: "Please review gameplay code for this game development team handoff workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4a6dfefbcb558da5b23bccb257d3f381aeab4264cf1c4d4ee1900054fb6da23f"
+  content_hash: "417cf0ebaba249a89eb02c3beca25a70c057af859ab2c27818b4a7946319681b"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "finance-operations/source-9"
+  path: "finance-operations/source-49"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "performance-review"
   request_pattern: "summarize expense report"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize expense report for this finance operations workflow."
+  example_user_request: "Please summarize expense report for this finance operations performance review workflow."
 output:
   format: "markdown"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "70783030274346872128e66eb7c6a2688849e2c21a918665f5a2094512aec1e9"
+  content_hash: "fc848cf3d13d7571674bc9102d4266b0169d0e883a4ee68343274edd0d70406c"

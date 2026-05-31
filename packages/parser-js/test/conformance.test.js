@@ -26,10 +26,20 @@ for (const filename of listFixtures(invalidDir)) {
 const taskLibraryFiles = listYamlFixturesRecursive(taskLibraryDir);
 assert.ok(taskLibraryFiles.length >= 1000, "task library should contain at least 1000 UATP task files");
 
+const taskLibrarySemanticSignatures = new Map();
 for (const filename of taskLibraryFiles) {
   const document = loadUatp(filename);
   const result = validateUatp(document);
   assert.equal(result.valid, true, `${filename} should be valid`);
+
+  const semanticSignature = document.metadata?.semantic_signature;
+  assert.ok(semanticSignature, `${filename} should have metadata.semantic_signature`);
+  assert.equal(
+    taskLibrarySemanticSignatures.has(semanticSignature),
+    false,
+    `${filename} duplicates semantic signature from ${taskLibrarySemanticSignatures.get(semanticSignature)}`
+  );
+  taskLibrarySemanticSignatures.set(semanticSignature, filename);
 }
 
 const debugTask = loadUatp(path.join(validDir, "debug_code.yaml"));

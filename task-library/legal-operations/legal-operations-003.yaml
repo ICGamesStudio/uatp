@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Legal Operations"
   audience: "legal teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "create a review plan"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please create a review plan for this legal operations workflow."
+  example_user_request: "Please create a review plan for this legal operations new project bootstrap workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "a9f491a95e859e14611137d2edf53749c00e52f181dbf481c611b63224ce0b89"
+  content_hash: "86892a157cc569704df5eaad32d388b4d274eba9b0595074b3f0cab32707412b"

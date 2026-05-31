@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "debug a failing test suite"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a failing test suite for this software engineering workflow."
+  example_user_request: "Please debug a failing test suite for this software engineering existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "65f1c387f18e1d24c00a97daea687fa1e92e90f011ca27679c6ad94aabb0dacf"
+  content_hash: "d1873817d45daec48e1a11faab0444a221a7031a5915c2aaab9dae83c4dc712b"

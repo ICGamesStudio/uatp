@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "content-production/source-5"
+  path: "content-production/source-15"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Content Production"
   audience: "content teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "debug missing context"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug missing context for this content production workflow."
+  example_user_request: "Please debug missing context for this content production existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "186dd644437bf6b05b7bf8904400d9404b76588319ad4ec62fa588d18ca98f92"
+  content_hash: "67d1c21d83d0ed335ca25b1eecd8e5a7c471d80272b7dce5698f11914df0663b"

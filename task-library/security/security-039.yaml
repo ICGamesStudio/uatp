@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "security/source-9"
+  path: "security/source-39"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "quality-audit"
   request_pattern: "debug a security test failure"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a security test failure for this security workflow."
+  example_user_request: "Please debug a security test failure for this security quality audit workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "823da229adfb6c550a841348b1b912c6a9c1541746b221d238dbd11904c1c05d"
+  content_hash: "910a0793def459c54c082331cb4afff37361a43ec18ce0d29a547e2b7b235a2d"

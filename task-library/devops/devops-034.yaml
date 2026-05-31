@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "quality-audit"
   request_pattern: "debug a deployment failure"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a deployment failure for this devops workflow."
+  example_user_request: "Please debug a deployment failure for this devops quality audit workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "602d2e06a7f416166663b4bb9557790db6d8c3f032ed75f48ea9d7791259af18"
+  content_hash: "587609385930c4f4d8ee922499275ad3c936172201f471524c95fe5cdbf168e9"

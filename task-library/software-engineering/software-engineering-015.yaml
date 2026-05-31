@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Software Engineering"
   audience: "engineering teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "create an implementation plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create an implementation plan for this software engineering workflow."
+  example_user_request: "Please create an implementation plan for this software engineering existing codebase maintenance workflow."
 output:
   format: "plan"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c2558ccb5e8c87b05166ac4a8a5f1cc6a7b4d84e930395b2ca80df5362ab0099"
+  content_hash: "eb781203664ccfd662e9b624ed21849984365abfa97b65736517c37ffab36a0d"

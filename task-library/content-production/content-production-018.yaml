@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "content-production/source-8"
+  path: "content-production/source-18"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Content Production"
   audience: "content teams"
+  scenario: "production-incident-response"
   request_pattern: "extract content pillars"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract content pillars for this content production workflow."
+  example_user_request: "Please extract content pillars for this content production production incident response workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "08dab027f0143e98435c967bb17c6f48804a8ebc5ee8e327a4d0680f2ff9b2ad"
+  content_hash: "3e1470b8d67a4ba00e01e577f114db159d46f19bdea05f1b795d9ff52b462e10"

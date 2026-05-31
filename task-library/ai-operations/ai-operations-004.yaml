@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "refactor prompt templates"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor prompt templates for this ai operations workflow."
+  example_user_request: "Please refactor prompt templates for this ai operations new project bootstrap workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "746b371a9b0be6a7bbe414dbc777815063ad2d46b8c27434d56efc80075ab38e"
+  content_hash: "cb54dde8d9303ee7c3db69e9d0b05da26fc0ee357edb93afff42d613cbca92a6"

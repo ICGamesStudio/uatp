@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "ai-operations/source-2"
+  path: "ai-operations/source-32"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "team-handoff"
   request_pattern: "translate eval notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate eval notes for this ai operations workflow."
+  example_user_request: "Please translate eval notes for this ai operations team handoff workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "2cd5b085eb55780397d379d79c6bfc198913bd2802a02727ea911c2e806fdae1"
+  content_hash: "0356d0983276d074c84d648209ee45278f2347bd534f5dca38f03cfb000a9ed9"

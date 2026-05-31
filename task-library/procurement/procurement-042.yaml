@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "procurement/source-2"
+  path: "procurement/source-42"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "migration-work"
   request_pattern: "extract evaluation criteria"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract evaluation criteria for this procurement workflow."
+  example_user_request: "Please extract evaluation criteria for this procurement migration work workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "b6fd90a8ddd34b22b2ee82093027b2518451f9d86d096bd3249a55e0841c75a0"
+  content_hash: "c50156635e8c71e500930a09229ba3d08ce1de5f6401af1037514a4d3af4801a"

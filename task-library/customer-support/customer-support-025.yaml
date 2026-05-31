@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "conversation"
-  path: "customer-support/source-5"
+  path: "customer-support/source-25"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Customer Support"
   audience: "support teams"
+  scenario: "team-handoff"
   request_pattern: "summarize a support thread"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize a support thread for this customer support workflow."
+  example_user_request: "Please summarize a support thread for this customer support team handoff workflow."
 output:
   format: "markdown"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "39eca96503c87816df40906d408857d2d46eaa7ba483fcce23afa67d5af251b2"
+  content_hash: "5bd64e666625bf43486f07f52caa24869a32645be2f6968a5b2e1883a71acb17"

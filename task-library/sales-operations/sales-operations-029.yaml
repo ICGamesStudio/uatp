@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "sales-operations/source-9"
+  path: "sales-operations/source-29"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Sales Operations"
   audience: "sales teams"
+  scenario: "team-handoff"
   request_pattern: "review proposal requirements"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review proposal requirements for this sales operations workflow."
+  example_user_request: "Please review proposal requirements for this sales operations team handoff workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c148eb11e552ea4f904351c98799a4a93529d69266e88cdae779c6a999946ab7"
+  content_hash: "82074f32b0f5adc51f59e18a49b4048c6dfc5a446aad591bbc625bad06da4bbb"

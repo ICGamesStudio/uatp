@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "healthcare-admin/source-8"
+  path: "healthcare-admin/source-48"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Healthcare Administration"
   audience: "healthcare operations teams"
+  scenario: "migration-work"
   request_pattern: "refactor instruction text"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor instruction text for this healthcare administration workflow."
+  example_user_request: "Please refactor instruction text for this healthcare administration migration work workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "bce62f2fc507630cebe05882507af999be2d3abbc5eae2d10be151b8d05905a9"
+  content_hash: "ab8c55288d954f8e721fdf0d0a2f9cd5d3d0ff1eafeaaf97a0f62e0eb63c3b20"

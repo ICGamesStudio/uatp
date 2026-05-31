@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "finance-operations/source-10"
+  path: "finance-operations/source-50"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "performance-review"
   request_pattern: "extract budget variances"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract budget variances for this finance operations workflow."
+  example_user_request: "Please extract budget variances for this finance operations performance review workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "09cc4024a914c2b539f0c4b9d678071490fa1bb582d7e5a38b169da9f570286a"
+  content_hash: "d8437a7ea911e8eaa647afd760cc435e95dfee106b4687c1dca91e25953c441d"

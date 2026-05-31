@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "marketing-operations/source-3"
+  path: "marketing-operations/source-33"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Marketing Operations"
   audience: "marketing teams"
+  scenario: "quality-audit"
   request_pattern: "summarize campaign results"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize campaign results for this marketing operations workflow."
+  example_user_request: "Please summarize campaign results for this marketing operations quality audit workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "7599cc71274ef4dde9bf7e04834d46be419d17ff145f46b6fafb0a5622e34f01"
+  content_hash: "468cf1fe55d4dc712ac1947d7f97febb0a8e7df188cefee8a22211b17e7d0e68"

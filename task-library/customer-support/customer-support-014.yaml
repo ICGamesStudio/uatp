@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "conversation"
-  path: "customer-support/source-4"
+  path: "customer-support/source-14"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Customer Support"
   audience: "support teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "write test cases for reproduction"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write test cases for reproduction for this customer support workflow."
+  example_user_request: "Please write test cases for reproduction for this customer support existing codebase maintenance workflow."
 output:
   format: "test_report"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "ddd00651c59ac471c399b29066df872e036def9e43ea616c0c62a5c7e1427b9e"
+  content_hash: "a750558681b02e9a2a6c6ff1f5f190cf9828f3b90d624d78c76e245a9ae17af3"

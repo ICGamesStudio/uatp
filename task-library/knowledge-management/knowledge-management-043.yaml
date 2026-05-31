@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "knowledge-management/source-3"
+  path: "knowledge-management/source-43"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "migration-work"
   request_pattern: "create a documentation plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a documentation plan for this knowledge management workflow."
+  example_user_request: "Please create a documentation plan for this knowledge management migration work workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "76859ceaf51760361415f9cbc7443ff253c1c4042e479d3eb5b7804d62a7af40"
+  content_hash: "37c21bfb9699e0d89afab31865c4831fcbc34166730ad7198e898d299228977e"

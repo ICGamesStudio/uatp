@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "security/source-3"
+  path: "security/source-33"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "quality-audit"
   request_pattern: "review a security report"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review a security report for this security workflow."
+  example_user_request: "Please review a security report for this security quality audit workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "4f91cbbaf27ed1dafdf0702471c489f76e8afe0f8e9f02d5c653b8d704da8cb8"
+  content_hash: "9fa8050b9757f82a9ee220f38980230f7682c72e184843f3a02c17e2a6ca60c4"

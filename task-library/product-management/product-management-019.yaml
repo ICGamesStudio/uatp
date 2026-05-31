@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "product-management/source-9"
+  path: "product-management/source-19"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "production-incident-response"
   request_pattern: "create a product plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a product plan for this product management workflow."
+  example_user_request: "Please create a product plan for this product management production incident response workflow."
 output:
   format: "plan"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "95aad3d723e3a0d19a664995e0b74ed01f6ea60efde87413c44cd21437fa7dd9"
+  content_hash: "160d1047ca3ef7e0ae83b19face94e9e36decd6062200202a3f9f5446a74c288"

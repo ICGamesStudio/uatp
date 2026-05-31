@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "human-resources/source-10"
+  path: "human-resources/source-20"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "production-incident-response"
   request_pattern: "translate HR notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate HR notes for this human resources workflow."
+  example_user_request: "Please translate HR notes for this human resources production incident response workflow."
 output:
   format: "plain_text"
   language: "tr"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "0a6299abe0e11eda6defcbcbd5fc622a8031c6740ab5ede6bcf5ace7be12c53f"
+  content_hash: "b413750b9806c2a001940b72b4c91782be246f4cf6ed2c38809af4f7f964f20b"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "legal-operations/source-3"
+  path: "legal-operations/source-43"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Legal Operations"
   audience: "legal teams"
+  scenario: "migration-work"
   request_pattern: "create a review plan"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please create a review plan for this legal operations workflow."
+  example_user_request: "Please create a review plan for this legal operations migration work workflow."
 output:
   format: "review_findings"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "477e4690aa968c427c95e0d45966ea00d6c904c05715ab6aa80fc06220bed152"
+  content_hash: "025916905a6511d8809728975113878b3408ab630ba39e7cd7e596232ed0bba7"

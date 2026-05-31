@@ -3,7 +3,7 @@ version: "0.1"
 intent: "debug_code"
 scope:
   target: "document"
-  path: "product-management/source-1"
+  path: "product-management/source-31"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "team-handoff"
   request_pattern: "debug a user journey"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug a user journey for this product management workflow."
+  example_user_request: "Please debug a user journey for this product management team handoff workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "9fb73e934534263cd25141477b90efb158b03ffe52941e3429cf4af5b6ef31a6"
+  content_hash: "eb3c9237392e0597f339f018c069e4d925dcc768898a707c9f49e50f4bd48445"

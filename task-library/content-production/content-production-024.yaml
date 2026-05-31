@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "content-production/source-4"
+  path: "content-production/source-24"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Content Production"
   audience: "content teams"
+  scenario: "production-incident-response"
   request_pattern: "refactor article structure"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor article structure for this content production workflow."
+  example_user_request: "Please refactor article structure for this content production production incident response workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "dbac1ecf211c2ec005fe86da606d20402af896cabe2489de7c698454e6586734"
+  content_hash: "23a84cff521ae29ecde30dfe6f96df54666712724fab9c83ad1cc914ebab2fee"

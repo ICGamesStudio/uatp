@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "knowledge-management/source-6"
+  path: "knowledge-management/source-26"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "team-handoff"
   request_pattern: "extract decision records"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract decision records for this knowledge management workflow."
+  example_user_request: "Please extract decision records for this knowledge management team handoff workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "382f53097eeb95aeceaa99f7b81dd187c4268d97e8eb3f191262c3ae5a7f49a8"
+  content_hash: "d9a04cc59404b9b3c2135fd1232e7d0ab20927aa74f222cf15b1b02d672bc78a"

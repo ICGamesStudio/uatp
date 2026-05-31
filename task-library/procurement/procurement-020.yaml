@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "procurement/source-10"
+  path: "procurement/source-20"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "production-incident-response"
   request_pattern: "translate vendor notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate vendor notes for this procurement workflow."
+  example_user_request: "Please translate vendor notes for this procurement production incident response workflow."
 output:
   format: "plain_text"
   language: "tr"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "362c864fe24286da367ebe444634a6e4bdb2922fd9119014985539a189f4612f"
+  content_hash: "c487ae91f153192cb2423c1c8e4b8db9402e7b8e227abd1aa3376857ab30e1f3"

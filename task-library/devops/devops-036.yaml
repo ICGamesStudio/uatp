@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "quality-audit"
   request_pattern: "extract required environment variables"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract required environment variables for this devops workflow."
+  example_user_request: "Please extract required environment variables for this devops quality audit workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "cfc365aad5b2242a7d4810f1689b6f10495ab0223b0e4d3c3c885a848bfcea73"
+  content_hash: "94921a8447476040c8dfc6db62235da370a21f1a4f6de332c54b849b6e0042f1"

@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Game Development"
   audience: "game teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "extract tuning parameters"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract tuning parameters for this game development workflow."
+  example_user_request: "Please extract tuning parameters for this game development new project bootstrap workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "f413adab499030b8375866e5eab96048b449b5a6fa56612ed37008275ba8444f"
+  content_hash: "5414b3f064f80839ddc0d3978050e1b9ccc9bfefefd459e216e6749b43ab7ace"

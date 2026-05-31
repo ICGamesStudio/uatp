@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Marketing Operations"
   audience: "marketing teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "review messaging consistency"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review messaging consistency for this marketing operations workflow."
+  example_user_request: "Please review messaging consistency for this marketing operations new project bootstrap workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "d5446146b268c9c7810d5ff697e793d5f9d9ebaa478f0fcb55d66ed9c989a460"
+  content_hash: "56d7f09439d923437b64a04817df886a739a1606ffd00b1176e9e05ed583e591"

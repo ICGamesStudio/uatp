@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "security/source-3"
+  path: "security/source-13"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "translate incident notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate incident notes for this security workflow."
+  example_user_request: "Please translate incident notes for this security existing codebase maintenance workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "b7a67f32ec0dc6b13de2354ef793ea32315d058298697ecdf28ed21d7c5b8f94"
+  content_hash: "7a443c50654adcd607f0fd98d3293d119286bfa0e688cc5a3223eddf3e5a230e"

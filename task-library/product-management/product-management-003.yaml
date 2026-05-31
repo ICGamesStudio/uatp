@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Product Management"
   audience: "product teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "create a product plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a product plan for this product management workflow."
+  example_user_request: "Please create a product plan for this product management new project bootstrap workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "5b9ab154b675796e7e82a6b6b0e192add70df1c9fbb1b096e5a6fa79f644f4f3"
+  content_hash: "848d2825b3b46c2e9a2de4fbdb360810eb399a64c5fa908f10c2e5ee120212c5"

@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "data-analytics/source-9"
+  path: "data-analytics/source-39"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "quality-audit"
   request_pattern: "write validation checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write validation checks for this data analytics workflow."
+  example_user_request: "Please write validation checks for this data analytics quality audit workflow."
 output:
   format: "test_report"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "1000312e45cc9e125bb79bf54a83ba9c23f27ca835f98fbb16bf7f2a458587a9"
+  content_hash: "c6d545408dad1454d2dc2c73c468feec22d35891d5d8233c3f284593291d9c8b"

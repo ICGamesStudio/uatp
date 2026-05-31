@@ -3,7 +3,7 @@ version: "0.1"
 intent: "extract_information"
 scope:
   target: "document"
-  path: "marketing-operations/source-6"
+  path: "marketing-operations/source-26"
 actions:
   - "inspect"
   - "extract"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Marketing Operations"
   audience: "marketing teams"
+  scenario: "team-handoff"
   request_pattern: "extract audience insights"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract audience insights for this marketing operations workflow."
+  example_user_request: "Please extract audience insights for this marketing operations team handoff workflow."
 output:
   format: "json"
   language: "en"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "9f9f033e41b5c6961ea5a5d3daf251e3922dedfaf7d6dfa6972c0481bbe7eb1b"
+  content_hash: "848f804866f067c75943bea765115beb85a4bb10f0c2ca1f9bd9ae26af5d37e2"

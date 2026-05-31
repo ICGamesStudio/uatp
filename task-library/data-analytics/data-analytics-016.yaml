@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "data-analytics/source-6"
+  path: "data-analytics/source-16"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "refactor a reporting query"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor a reporting query for this data analytics workflow."
+  example_user_request: "Please refactor a reporting query for this data analytics existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "83a75a762c32476b6533427921368444579f93ab774f14a65ccab79a56b408fd"
+  content_hash: "f5a10d7b909909e8a7b009f8bb8f39acad6807cb5f133c2a66cc899ddbbe99b3"

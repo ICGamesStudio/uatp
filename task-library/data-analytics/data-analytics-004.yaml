@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "translate dashboard notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate dashboard notes for this data analytics workflow."
+  example_user_request: "Please translate dashboard notes for this data analytics new project bootstrap workflow."
 output:
   format: "plain_text"
   language: "tr"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "27f8e92cbac448679a5521bec66ef2b1a0a40a0738296e8fd6d2043441ab6f4f"
+  content_hash: "b1d22a055ac1137c48fa6cf65f715b8ee013c07c098e3c2b55bd9ada8e696521"

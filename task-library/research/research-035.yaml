@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "research/source-5"
+  path: "research/source-35"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "quality-audit"
   request_pattern: "create an experiment plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create an experiment plan for this research workflow."
+  example_user_request: "Please create an experiment plan for this research quality audit workflow."
 output:
   format: "plan"
   language: "tr"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "cd73e51cf7a43d47c173d002e211aefe4dd9266315a3527cb955de0be572f062"
+  content_hash: "2b1fa109653f036dd774f51e88edda90f5b930db98c2cb081db3d1a20966899c"

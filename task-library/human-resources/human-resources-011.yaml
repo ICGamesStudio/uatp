@@ -3,7 +3,7 @@ version: "0.1"
 intent: "create_plan"
 scope:
   target: "document"
-  path: "human-resources/source-1"
+  path: "human-resources/source-11"
 actions:
   - "inspect"
   - "plan"
@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Human Resources"
   audience: "people teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "create an onboarding plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create an onboarding plan for this human resources workflow."
+  example_user_request: "Please create an onboarding plan for this human resources existing codebase maintenance workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "6e18621e973bac4adfff2b8c2eb43020b21af3ab36bebb8bf184670ae8a10786"
+  content_hash: "597e98672e51c810d312a0130128d5b4d8b110f98c577d7b5697819ec89e1bac"

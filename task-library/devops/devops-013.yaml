@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "create a rollback plan"
   expected_business_value: "Convert ambiguous requests into executable steps."
-  example_user_request: "Please create a rollback plan for this devops workflow."
+  example_user_request: "Please create a rollback plan for this devops existing codebase maintenance workflow."
 output:
   format: "plan"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "342207b80df8d23c3469bbc141d07b50a6783d41083cc6d113cba4870425cfbe"
+  content_hash: "94ac9d9fa274c9a1f908791741a7d8508ad143112bb75a643bcd13b0a031be57"

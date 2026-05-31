@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "security/source-8"
+  path: "security/source-18"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "production-incident-response"
   request_pattern: "summarize risk findings"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize risk findings for this security workflow."
+  example_user_request: "Please summarize risk findings for this security production incident response workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c8e403e5c404ca397369d547c65d1dc159c00a2cf1fb04c90982f928c79ba1ee"
+  content_hash: "1430a8c34e0e31da1476155930368d2470067861db47524eecbc71f155245e81"

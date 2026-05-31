@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "security/source-8"
+  path: "security/source-48"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Security"
   audience: "security teams"
+  scenario: "migration-work"
   request_pattern: "refactor policy wording"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor policy wording for this security workflow."
+  example_user_request: "Please refactor policy wording for this security migration work workflow."
 output:
   format: "diff_summary"
   language: "en"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "8613540604d0d32dc3cbda880e6707f0d0243c48668be1ce5dc3cbdfb1369fe6"
+  content_hash: "7d1c8c591e51c4ac1798794282aa91b706a6ecadd36ec340ba3e89d19ef331a0"

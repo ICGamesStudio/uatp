@@ -3,7 +3,7 @@ version: "0.1"
 intent: "summarize"
 scope:
   target: "document"
-  path: "research/source-3"
+  path: "research/source-33"
 actions:
   - "inspect"
   - "summarize"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Research"
   audience: "research teams"
+  scenario: "quality-audit"
   request_pattern: "summarize a paper"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize a paper for this research workflow."
+  example_user_request: "Please summarize a paper for this research quality audit workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "aa9c4cdc7684e79248fc28c4a8fa02c298d4d52cca07f036903742484273cf8d"
+  content_hash: "2fc5d9bb975dbb1c4098bdd9cf0e13eaa28b74d42d584c7d0ca0403ba0c0b102"

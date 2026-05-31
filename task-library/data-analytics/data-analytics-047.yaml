@@ -3,7 +3,7 @@ version: "0.1"
 intent: "write_tests"
 scope:
   target: "document"
-  path: "data-analytics/source-7"
+  path: "data-analytics/source-47"
 actions:
   - "inspect"
   - "run_tests"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Data Analytics"
   audience: "analytics teams"
+  scenario: "migration-work"
   request_pattern: "write validation checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write validation checks for this data analytics workflow."
+  example_user_request: "Please write validation checks for this data analytics migration work workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "6bf155efc5ac5b209f0c95784c3e5db162b31052b8880533408757bdb652c93a"
+  content_hash: "adbde5bb075a35729b834e96af13b5e2ab40578056fc3079d09a155e9dc218c1"

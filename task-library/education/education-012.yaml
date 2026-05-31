@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "education/source-2"
+  path: "education/source-12"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Education"
   audience: "learning teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "translate course notes"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate course notes for this education workflow."
+  example_user_request: "Please translate course notes for this education existing codebase maintenance workflow."
 output:
   format: "plain_text"
   language: "en"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "909f2b219fbd5629b24169ac60cc3fff42d93e673841793885023d4da6f13260"
+  content_hash: "5b22d3e979c1df0f3a04f7b73e2ae9c4f9a1c8d0d39961b4bcd6382f43eed343"

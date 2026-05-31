@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Procurement"
   audience: "procurement teams"
+  scenario: "new-project-bootstrap"
   request_pattern: "write validation checks"
   expected_business_value: "Increase confidence with repeatable validation."
-  example_user_request: "Please write validation checks for this procurement workflow."
+  example_user_request: "Please write validation checks for this procurement new project bootstrap workflow."
 output:
   format: "test_report"
   language: "en"
@@ -40,3 +41,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "61827cb90c7467461cc8c43123a2241bfd66a7afdc7932a262615e5a0b07ac8e"
+  content_hash: "d29fc762d4ccf03c382c7c06b213f38c8e00d691cd0a4d41f733f5689c3798a9"

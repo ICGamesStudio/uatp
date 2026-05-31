@@ -22,9 +22,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "extract decision records"
   expected_business_value: "Turn unstructured input into reusable data."
-  example_user_request: "Please extract decision records for this knowledge management workflow."
+  example_user_request: "Please extract decision records for this knowledge management existing codebase maintenance workflow."
 output:
   format: "json"
   language: "tr"
@@ -39,3 +40,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "eeff77f4ba383ab8c023bb2318fe0ecb28adf0006302df90b4f2651537e037c8"
+  content_hash: "2fd7b022a37d8aa36dbad3b477b57128f6e1ca2236691d19a42ae83d471a9feb"

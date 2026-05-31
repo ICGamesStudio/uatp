@@ -3,7 +3,7 @@ version: "0.1"
 intent: "translate"
 scope:
   target: "document"
-  path: "marketing-operations/source-4"
+  path: "marketing-operations/source-44"
 actions:
   - "translate"
 success_criteria:
@@ -20,9 +20,10 @@ constraints:
 context:
   domain: "Marketing Operations"
   audience: "marketing teams"
+  scenario: "migration-work"
   request_pattern: "translate campaign copy"
   expected_business_value: "Make information usable across languages."
-  example_user_request: "Please translate campaign copy for this marketing operations workflow."
+  example_user_request: "Please translate campaign copy for this marketing operations migration work workflow."
 output:
   format: "plain_text"
   language: "tr"
@@ -35,3 +36,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "342fb4760376ffe028bd066b6243b17fe4eed44c6c730cc78c3cb79afc57902a"
+  content_hash: "597ce91172b0eb79dfc0e01ee0ae1bdf5c8eee6160bd97257511cb7bbb07fbc5"

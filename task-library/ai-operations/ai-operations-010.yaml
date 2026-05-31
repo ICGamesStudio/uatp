@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "AI Operations"
   audience: "AI platform teams"
+  scenario: "existing-codebase-maintenance"
   request_pattern: "debug an evaluation failure"
   expected_business_value: "Reduce time to diagnose and fix operational failures."
-  example_user_request: "Please debug an evaluation failure for this ai operations workflow."
+  example_user_request: "Please debug an evaluation failure for this ai operations existing codebase maintenance workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c4a1362a7f405dcc75c200015c6c1197a2cd09e5d30401f112a17b9e262a4358"
+  content_hash: "24e29a08cd5373b226ae1e770fab89b2f7917273622f25542110f90e5115aa32"

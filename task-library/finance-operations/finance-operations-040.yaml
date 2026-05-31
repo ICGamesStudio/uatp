@@ -3,7 +3,7 @@ version: "0.1"
 intent: "refactor_code"
 scope:
   target: "document"
-  path: "finance-operations/source-10"
+  path: "finance-operations/source-40"
 actions:
   - "inspect"
   - "patch"
@@ -23,9 +23,10 @@ constraints:
 context:
   domain: "Finance Operations"
   audience: "finance teams"
+  scenario: "quality-audit"
   request_pattern: "refactor report structure"
   expected_business_value: "Improve maintainability while controlling change risk."
-  example_user_request: "Please refactor report structure for this finance operations workflow."
+  example_user_request: "Please refactor report structure for this finance operations quality audit workflow."
 output:
   format: "diff_summary"
   language: "tr"
@@ -41,3 +42,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "c1f7bbda0add42e07b4e69410f28446c42a11f79fad6832ee9e6691a7419600c"
+  content_hash: "a5becfe1fa3baa1d584814c79cc83941dba2419cb0003c8ae67a0fc3b7efa170"

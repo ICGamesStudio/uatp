@@ -3,7 +3,7 @@ version: "0.1"
 intent: "review_code"
 scope:
   target: "document"
-  path: "knowledge-management/source-9"
+  path: "knowledge-management/source-29"
 actions:
   - "inspect"
   - "report"
@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "Knowledge Management"
   audience: "operations teams"
+  scenario: "team-handoff"
   request_pattern: "review information architecture"
   expected_business_value: "Improve review consistency and reduce missed issues."
-  example_user_request: "Please review information architecture for this knowledge management workflow."
+  example_user_request: "Please review information architecture for this knowledge management team handoff workflow."
 output:
   format: "review_findings"
   language: "tr"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "b44a4b46ede3a81522ff7ed28511c4b0e9d8198f4fe582ff68f8b915c667c312"
+  content_hash: "f8b54a3fac6b41df05fe1f3db6af29d7431a496a8a94f8a4b6604b15886102ca"

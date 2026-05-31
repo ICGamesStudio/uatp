@@ -21,9 +21,10 @@ constraints:
 context:
   domain: "DevOps"
   audience: "platform teams"
+  scenario: "migration-work"
   request_pattern: "summarize infrastructure changes"
   expected_business_value: "Reduce review time and preserve key information."
-  example_user_request: "Please summarize infrastructure changes for this devops workflow."
+  example_user_request: "Please summarize infrastructure changes for this devops migration work workflow."
 output:
   format: "markdown"
   language: "en"
@@ -38,3 +39,5 @@ metadata:
   source: "generated-task-library"
   owner: "Smartlabs Medya Teknolojileri AŞ"
   website: "https://www.smartlabs.com.tr"
+  semantic_signature: "e2fe1b2c3602fa43f78faff624e651f216936b118f0727802c181dc81e485d96"
+  content_hash: "bcfb0a232b39db494cce075d60e1523409eab93244e9e9e86b18e418ab1656e7"

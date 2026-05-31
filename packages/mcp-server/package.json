@@ -1,0 +1,25 @@
+{
+  "name": "@uatp/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server and companion CLI for Universal Agent Task Protocol.",
+  "author": "Smartlabs Medya Teknolojileri AŞ",
+  "homepage": "https://www.smartlabs.com.tr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICGamesStudio/uatp.git",
+    "directory": "packages/mcp-server"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "uatp-mcp": "./src/server.js",
+    "uatp-companion": "./src/companion.js"
+  },
+  "scripts": {
+    "check": "node --check src/server.js && node --check src/companion.js",
+    "smoke": "node test/smoke.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0"
+  }
+}

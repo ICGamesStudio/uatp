@@ -15,7 +15,7 @@
     "uatp": "./src/cli.js"
   },
   "scripts": {
-    "check": "node --check src/index.js && node --check src/cli.js && node --check test/conformance.test.js",
+    "check": "node --check src/index.js && node --check src/cli.js && node --check src/translator.js && node --check src/translator-model.js && node --check test/conformance.test.js",
     "test": "node test/conformance.test.js",
     "validate:examples": "node src/cli.js validate ../../examples/debug_code.yaml && node src/cli.js validate ../../examples/review_code.yaml && node src/cli.js validate ../../examples/summarize.yaml",
     "generate:library": "node ../../tools/generate-task-library.js",

@@ -83,6 +83,21 @@ npm run build:index
 npm run translate -- --prompt "Review this pull request and list security risks with evidence"
 ```
 
+Translate a Turkish prompt through the canonical English normalizer:
+
+```bash
+npm run translate -- --prompt "Bu kodu incele ve test eksiklerini bul" --json
+```
+
+Use an optional local LLM normalizer when a runtime needs stronger multilingual normalization:
+
+```bash
+npm run translate -- --prompt "Bu kodu incele ve test eksiklerini bul" --json \
+  --provider local-llm \
+  --endpoint http://localhost:11434/api/generate \
+  --model llama3.1
+```
+
 Validate a task with Python:
 
 ```bash
@@ -101,6 +116,7 @@ python -m uatp.cli transpile ../../examples/debug_code.yaml --target claude
 - [Data sources](docs/data-sources.md)
 - [Learning loop](docs/learning-loop.md)
 - [Prompt translation](docs/prompt-translation.md)
+- [MCP Companion](docs/mcp-companion.md)
 - [Benchmarks](docs/benchmarks.md)
 - [Specification](spec/uatp-0.1.md)
 - [Roadmap](docs/roadmap.md)

@@ -8,6 +8,8 @@
 - Added task-library duplicate controls and public data-source policy.
 - Added learning-loop and prompt-to-UATP translation architecture.
 - Added task-library index, prompt translator prototype, and anonymous contribution envelope CLI.
+- Added MCP companion server and companion CLI prototype.
+- Added canonical prompt normalization and optional local LLM translator adapter.
 
 ## 0.1.0-dev
 

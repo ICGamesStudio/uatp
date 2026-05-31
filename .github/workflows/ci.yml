@@ -20,6 +20,12 @@ jobs:
         run: npm run validate:library
       - working-directory: packages/parser-js
         run: npm run validate:index
+      - working-directory: packages/mcp-server
+        run: npm ci
+      - working-directory: packages/mcp-server
+        run: npm run check
+      - working-directory: packages/mcp-server
+        run: npm run smoke
 
   python:
     runs-on: ubuntu-latest
